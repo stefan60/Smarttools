@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<qualities>
+  <quality standard="EN" >
+    <code>CC</code>
+    <code>CD</code>
+    <code>BC</code>
+    <code>BD</code>
+  </quality>
+  <quality standard="ISO" >
+    <code>W0</code>
+    <code>W1</code>
+    <code>W2</code>
+    <code>W2R</code>
+    <code>W0b</code>
+  </quality>
+</qualities>

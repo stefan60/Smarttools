@@ -1,0 +1,2610 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SmartTools</name>
+    </assembly>
+    <members>
+        <member name="T:SmartTools.Prime">
+            <summary>Основни характеристики на приложението</summary>
+        </member>
+        <member name="F:SmartTools.Prime.TEST">
+            <summary>флаг оределящ режима на работа</summary>
+            <date>2019-04-08</date>
+        </member>
+        <member name="F:SmartTools.Prime.HEIHGT_EXPLODE_HOLE">
+            <summary>височина на избущен отвор</summary>
+            <date>2019-04-08</date>
+        </member>
+        <member name="F:SmartTools.Prime.RADIANS_360DEG">
+            <summary>радиани за 360 градуса</summary>
+            <date>2019-04-08</date>
+        </member>
+        <member name="T:SmartTools.Prime.Groups_e">
+            <summary>Тип на групите в PropertyManager Page</summary>
+            <date>2019-04-08</date>
+        </member>
+        <member name="F:SmartTools.Prime.Groups_e.Dimension">
+            <summary>габаритни размери</summary>
+        </member>
+        <member name="F:SmartTools.Prime.Groups_e.Characteristics">
+            <summary>характеристики на материала</summary>
+        </member>
+        <member name="F:SmartTools.Prime.Groups_e.Complement">
+            <summary>допълнителна информация</summary>
+        </member>
+        <member name="F:SmartTools.Prime.Groups_e.CoordinateSystem">
+            <summary>координатна система</summary>
+        </member>
+        <member name="T:SmartTools.Prime.Patterns_e">
+            <summary>Моделите използвани от приложението</summary>
+            <date>2019-04-08</date>
+        </member>
+        <member name="F:SmartTools.Prime.Patterns_e.Plate">
+            <summary>Модел "планка"</summary>
+        </member>
+        <member name="F:SmartTools.Prime.Patterns_e.Axis">
+            <summary>Модел "ос"</summary>
+        </member>
+        <member name="F:SmartTools.Prime.Patterns_e.Tube">
+            <summary>Модел "тръба"</summary>
+        </member>
+        <member name="F:SmartTools.Prime.Patterns_e.Mantel">
+            <summary>Модел "мантел"</summary>
+        </member>
+        <member name="F:SmartTools.Prime.Patterns_e.Cover">
+            <summary>Модел "капак"</summary>
+        </member>
+        <member name="F:SmartTools.Prime.Patterns_e.Bottom">
+            <summary>Модел "дъно"</summary>
+        </member>
+        <member name="F:SmartTools.Prime.Patterns_e.Hole">
+            <summary>инструмент за нормален отвор</summary>
+        </member>
+        <member name="F:SmartTools.Prime.Patterns_e.OutHole">
+            <summary>инструмент за избушен отвор навън</summary>
+        </member>
+        <member name="F:SmartTools.Prime.Patterns_e.InHole">
+            <summary>инструмент за избушен отвор навътре</summary>
+        </member>
+        <member name="F:SmartTools.Prime.Patterns_e.EditPattern">
+            <summary>инструмент за редактиране на модел</summary>
+        </member>
+        <member name="T:SmartTools.Prime.Controls_e">
+            <summary>контроли използвани в swPMPage</summary>
+            <date>2019-04-08</date>
+        </member>
+        <member name="F:SmartTools.Prime.Controls_e.Material">
+            <summary>контрола за избор на материал</summary>
+        </member>
+        <member name="F:SmartTools.Prime.Controls_e.Certificate">
+            <summary>контрола за избор на сертификат</summary>
+        </member>
+        <member name="F:SmartTools.Prime.Controls_e.Test">
+            <summary>контрола за избор на тест</summary>
+        </member>
+        <member name="F:SmartTools.Prime.Controls_e.Diameter">
+            <summary>контрола за въвеждане/избор на диаметър</summary>
+        </member>
+        <member name="F:SmartTools.Prime.Controls_e.Thickness">
+            <summary>контрола за въвеждане/избор на дебелина</summary>
+        </member>
+        <member name="F:SmartTools.Prime.Controls_e.Height">
+            <summary>контрола за въвеждане на височина</summary>
+        </member>
+        <member name="F:SmartTools.Prime.Controls_e.WeldingSeam">
+            <summary>контрола за въвеждане ъгъла на заваръчния шев</summary>
+        </member>
+        <member name="F:SmartTools.Prime.Controls_e.Length">
+            <summary>контрола за въвеждане на дължина</summary>
+        </member>
+        <member name="F:SmartTools.Prime.Controls_e.Width">
+            <summary>контрола за въвеждане на ширина</summary>
+        </member>
+        <member name="F:SmartTools.Prime.Controls_e.Standard">
+            <summary>контрола за избор на стандарт</summary>
+        </member>
+        <member name="F:SmartTools.Prime.Controls_e.Quality">
+            <summary>контрола за избор на качество</summary>
+        </member>
+        <member name="F:SmartTools.Prime.Controls_e.NoDrawing">
+            <summary>контрола за избор без чертеж на детайл</summary>
+        </member>
+        <member name="F:SmartTools.Prime.Controls_e.Clockwise">
+            <summary>контрола за избор на посока по часовниковата стрелка</summary>
+        </member>
+        <member name="F:SmartTools.Prime.Controls_e.AntiClockwise">
+            <summary>контрола за избор на посока против часовниковата стрелка</summary>
+        </member>
+        <member name="F:SmartTools.Prime.Controls_e.NortPosition">
+            <summary>контрола за избор на посока север на 0</summary>
+        </member>
+        <member name="F:SmartTools.Prime.Controls_e.EastPosition">
+            <summary>контрола за избор на посока изток на 0</summary>
+        </member>
+        <member name="F:SmartTools.Prime.Controls_e.SoutPosition">
+            <summary>контрола за избор на посока юг на 0</summary>
+        </member>
+        <member name="F:SmartTools.Prime.Controls_e.WestPosition">
+            <summary>контрола за избор на посока запад на 0</summary>
+        </member>
+        <member name="F:SmartTools.Prime.Controls_e.AngularOffset">
+            <summary>контрола за избор на ъглово отместване на отвор</summary>
+        </member>
+        <member name="F:SmartTools.Prime.Controls_e.AngleInclination">
+            <summary>контрола за избор на наклона</summary>
+        </member>
+        <member name="F:SmartTools.Prime.Controls_e.BendRadius">
+            <summary>контрола за избор на рдиуса на бертване</summary>
+        </member>
+        <member name="F:SmartTools.Prime.Controls_e.Distance">
+            <summary>контрола за избор на разстоянието от центъра на координатната система до центъра на окръзност</summary>
+        </member>
+        <member name="F:SmartTools.Prime.Controls_e.idLabel">
+            <summary>начален уникален номер на етикетите към контролите</summary>
+        </member>
+        <member name="T:SmartTools.Prime.ControlElement_e">
+            <summary>контроли за вида надпис</summary>
+            <date>2019-04-08</date>
+        </member>
+        <member name="F:SmartTools.Prime.ControlElement_e.Caption">
+            <summary>надпис на елемент</summary>
+        </member>
+        <member name="F:SmartTools.Prime.ControlElement_e.Caption_rb">
+            <summary>надпис само за радио бутон</summary>
+        </member>
+        <member name="F:SmartTools.Prime.ControlElement_e.Tooltip">
+            <summary>подсказка за елемент</summary>
+        </member>
+        <member name="F:SmartTools.Prime.ControlElement_e.Error">
+            <summary>съобщение за грешка</summary>
+        </member>
+        <member name="F:SmartTools.Prime.ControlElement_e.NameSize">
+            <summary>наименование на размер</summary>
+        </member>
+        <member name="M:SmartTools.Prime.SinFn(System.Double,System.Double)">
+            <summary>връща размера на катета лежащ срещу ъгъла</summary>
+            <date>2019-04-08</date>
+            <param name="angle">стойност на ъгъла</param>
+            <param name="side">размер на хипотенузата</param>
+            <returns>размер на катат</returns>
+        </member>
+        <member name="M:SmartTools.Prime.CosFn(System.Double,System.Double)">
+            <summary>връща размера на прилежащия катет на ъгъла</summary>
+            <date>2019-04-08</date>
+            <param name="angle">стойност на ъгъла</param>
+            <param name="side">размер на хипотенузата</param>
+            <returns>размер на катет</returns>
+        </member>
+        <member name="M:SmartTools.Prime.GetControlsStringValue(SmartTools.Prime.Controls_e,SmartTools.Prime.ControlElement_e,SmartTools.Prime.Patterns_e)">
+            <summary>връща информация за контрола в swPMPage като стринг</summary>
+            <date>2019-04-08</date>
+            <param name="control">контрола в swPMPage</param>
+            <param name="element">елемент от информацията за контролата</param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartTools.Prime.ShowError(SmartTools.Prime.Controls_e,SmartTools.Prime.Patterns_e,System.Windows.Forms.MessageBoxButtons)">
+            <summary>Изобразява съобщение за грешка</summary>
+            <date>2019-004-08</date>
+            <param name="control">тип на контролата за която се отнася грешката</param>
+            <param name="pattern">тип на модела където е възникнала грешката</param>
+            <param name="buttons">достъпни бутони в екра за съобщението</param>
+            <returns></returns>
+        </member>
+        <member name="F:SmartTools.Prime.ADDIN_NAME">
+            <summary>Наименование на приложението</summary>
+        </member>
+        <member name="F:SmartTools.Prime.ADDIN_DESCRIPTION">
+            <summary>
+            Кратко описание на приложението, записано в регистрите
+            </summary>
+        </member>
+        <member name="F:SmartTools.Prime.CMD_GROUP_ID">
+            <summary>u
+            Номер на групата съдържаща указателите към моделите на приложението
+            </summary>
+        </member>
+        <member name="F:SmartTools.Prime.CMD_GROUP_NAME">
+            <summary>
+            Наименование на групата съдържаща указателите към моделите на приложението
+            </summary>
+        </member>
+        <member name="F:SmartTools.Prime.TAB_NAME">
+            <summary>
+            Наименование на раздела с указатели към моделите
+            </summary>
+        </member>
+        <member name="F:SmartTools.Prime.PATH_XML_RKEY">
+            <summary>
+            Наименование на ключа в регистрите за достъп до папката съдържаща XML файлове
+            </summary>
+        </member>
+        <member name="F:SmartTools.Prime.PATH_XML">
+            <summary>Папка съдържаща XML файлове на приложението</summary>
+        </member>
+        <member name="F:SmartTools.Prime.FORMAT_PARAMETER">
+            <summary>
+            Форматиращ стринг за параметрите
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "F:SmartTools.Prime.ERR_ACTIVE_DOC_NOT_ADDIN" -->
+        <member name="F:SmartTools.Prime.ERR_CREATE_PMPAGE">
+            <summary>
+            Съобщение, че не е възможно създаване на PropertyManager Page
+            </summary>
+        </member>
+        <member name="F:SmartTools.Prime.AddIn">
+            <summary>Указател към приложението</summary>
+        </member>
+        <member name="P:SmartTools.Prime.PattensTypes">
+            <summary>
+            Масив с допустимите типове работни документи за SmartTools
+            </summary>
+        </member>
+        <member name="F:SmartTools.Prime.PathXML">
+            <summary>Папка съдържаща XML файлове на приложението</summary>
+        </member>
+        <member name="F:SmartTools.Prime.ONE_DEGREE">
+            <summary>
+            един градус в радиани
+            </summary>
+        </member>
+        <member name="F:SmartTools.Prime.DECIMAL_PLACE">
+            <summary>точност на числата с плаваща запетая</summary>
+        </member>
+        <member name="T:SmartTools.Prime.PatternElement_e">
+            <summary>елементи на мадела</summary>
+        </member>
+        <member name="F:SmartTools.Prime.PatternElement_e.Name">
+            <summary>наименование на модела</summary>
+        </member>
+        <member name="F:SmartTools.Prime.PatternElement_e.Hint">
+            <summary>
+            информация за модела появяваща се в лентата на състояние в SW
+            </summary>
+        </member>
+        <member name="M:SmartTools.Prime.GetPatternStringValue(SmartTools.Prime.Patterns_e,SmartTools.Prime.PatternElement_e)">
+            <summary>връща информация за модела като стринг</summary>
+            <param name="pattern">модел</param>
+            <param name="element">елемент от информацията за модела</param>
+            <returns>текстова информация</returns>
+        </member>
+        <member name="M:SmartTools.Prime.CheckDimension(System.Double,System.Double,System.String)">
+            <summary>
+            Проверява дали <paramref name="val"/> е по-голяма от <paramref name="check"/>.
+            </summary>
+            <param name="val">проверяване стойност</param>
+            <param name="check">контролна стойност</param>
+            <param name="msg">съобщение при <paramref name="val"/> е по-малка от <paramref name="check"/></param>
+            <returns>TRUE при <paramref name="val"/> е по-голямо от <paramref name="check"/></returns>
+        </member>
+        <member name="M:SmartTools.Prime.InRadians(System.Double)">
+            <summary>Преобразува ъглови градуси в радиани</summary>
+            <param name="degrees">стойност на ъгловия градус</param>
+            <returns>стойност на радианите</returns>
+        </member>
+        <member name="M:SmartTools.Prime.InDegrees(System.Double)">
+            <summary>Преобразува радиани в ъглови градуси</summary>
+            <param name="radians">стойнонст на радианите</param>
+            <returns>стойност на ъгловите градуси</returns>
+        </member>
+        <member name="M:SmartTools.Prime.Name(System.String,System.String)">
+            <summary>връща форматирано наименование на елемент</summary>
+            <param name="arg0">водещ аргумент</param>
+            <param name="arg1">основен аргумент</param>
+            <returns><paramref name="arg0"/>@<paramref name="arg1"/></returns>
+        </member>
+        <member name="P:SmartTools.Lib.PatternBase.swStartCS">
+            <summary>началото на координатната система в SW</summary>
+            <date>2019-04-08</date>
+        </member>
+        <member name="P:SmartTools.Lib.PatternBase.swPlane">
+            <summary>тип равнина</summary>
+            <date>2019-04-08</date>
+        </member>
+        <member name="P:SmartTools.Lib.PatternBase.swFrontPlane">
+            <summary>фронталната равнина в SW</summary>
+            <date>2019-04-08</date>
+        </member>
+        <member name="P:SmartTools.Lib.PatternBase.swRightPlane">
+            <summary>страничната равнина в SW</summary>
+            <date>2019-04-08</date>
+        </member>
+        <member name="P:SmartTools.Lib.PatternBase.swTopPlane">
+            <summary>хоризонтална равнина в SW</summary>
+            <date>2019-04-08</date>
+        </member>
+        <member name="P:SmartTools.Lib.PatternBase.swAxis">
+            <summary>тип на ос в SW</summary>
+            <date>2019-04-08</date>
+        </member>
+        <member name="P:SmartTools.Lib.PatternBase.swSketchPoint">
+            <summary>тип точка в скицата в SW</summary>
+            <date>2019-04-08</date>
+        </member>
+        <member name="P:SmartTools.Lib.PatternBase.swExtSketchPoint">
+            <summary>тип точка извън работната равнина в SW</summary>
+        </member>
+        <member name="P:SmartTools.Lib.PatternBase.swSketchSegment">
+            <summary>тип елемент на скица в SW</summary>
+            <date>2019-04-08</date>
+        </member>
+        <member name="P:SmartTools.Lib.PatternBase.sgHorizontalPoints">
+            <summary>ограничение за хоризонталност между две точки</summary>
+            <date>2019-04-08</date>
+        </member>
+        <member name="P:SmartTools.Lib.PatternBase.sgTangent">
+            <summary>ограничение за тангенциалност на избрани елементи</summary>
+            <date>2019-04-08</date>
+        </member>
+        <member name="P:SmartTools.Lib.PatternBase.nameAxis">
+            <summary>наименование на оста на тялото</summary>
+            <date>2019-04-08</date>
+        </member>
+        <member name="P:SmartTools.Lib.PatternBase.nameBody">
+            <summary>наименование на тялото на модела</summary>
+            <date>2019-04-08</date>
+        </member>
+        <member name="P:SmartTools.Lib.PatternBase.nameBodySketch">
+            <summary>наименование на скицата за изграждане на тялото</summary>
+            <date>2019-04-10</date>
+        </member>
+        <member name="P:SmartTools.Lib.PatternBase.nameThickness">
+            <summary>наименование на размер за дебелина на стена</summary>
+            <date>2019-04-08</date>
+        </member>
+        <member name="P:SmartTools.Lib.PatternBase.nameBodyRadius">
+            <summary>наименование на базовия вътрешния радиус на тялото</summary>
+            <date>2019-04-08</date>
+        </member>
+        <member name="P:SmartTools.Lib.PatternBase.nameAngleInclination">
+            <summary>наименование на ъгъла на наклона на дъното или капака</summary>
+            <date>2019-04-08</date>
+        </member>
+        <member name="P:SmartTools.Lib.PatternBase.nameBendRadius">
+            <summary>наименование на радиуса на бертване на дъното или капака</summary>
+            <date>2019-04-08</date>
+        </member>
+        <member name="P:SmartTools.Lib.PatternBase.nameBodyWS">
+            <summary>наименование на тялото на заваръчния шев</summary>
+            <date>2019-04-08</date>
+        </member>
+        <member name="P:SmartTools.Lib.PatternBase.nameExplodeInternal">
+            <summary>наименование на размер за вътрешна височина на избушен отвор</summary>
+            <date>2019-04-10</date>
+        </member>
+        <member name="P:SmartTools.Lib.PatternBase.nameExplodeExternal">
+            <summary>наименование на размер за вътрешна височина на избушен отвор</summary>
+            <date>2019-04-10</date>
+        </member>
+        <member name="P:SmartTools.Lib.PatternBase.nameExplodeMidle">
+            <date>2019-04-10</date>
+        </member>
+        <member name="P:SmartTools.Lib.PatternBase.nameModel">
+            <summary>наименование на модела като текст</summary>
+            <date>2019-04-08</date>
+        </member>
+        <member name="P:SmartTools.Lib.PatternBase.nameModelToLower">
+            <summary>наименование на модела като текст с малки букви</summary>
+            <date>2019-04-08</date>
+        </member>
+        <member name="M:SmartTools.Lib.PatternBase.InsertSketch">
+            <summary>добавя нова скица или обновява съществуващата</summary>
+            <date>2019-04-08</date>
+        </member>
+        <member name="M:SmartTools.Lib.PatternBase.ClearSelection">
+            <summary>премахва всички избрани обекти</summary>
+            <date>2019-04-08</date>
+        </member>
+        <member name="M:SmartTools.Lib.PatternBase.Selected(System.String,System.String,System.Boolean,System.Int32)">
+            <summary>избира обект с определено име и тип</summary>
+            <date>2019-04-08</date>
+            <param name="objectName">наименование на обект</param>
+            <param name="objectType">тип на обекта</param>
+            <param name="append">начин на добавяне на обекта в списъка</param>
+            <param name="mark">флаг в зависимост от следващата процедура</param>
+            <returns>TRUE обекта е избран, FALSES - не е избран</returns>
+        </member>
+        <member name="M:SmartTools.Lib.PatternBase.SelectPlane(System.String)">
+            <summary>избира работна равнина и активира рабитна скица</summary>
+            <date>2019-04-08</date>
+            <param name="plane">наименование на варнината</param>
+        </member>
+        <member name="M:SmartTools.Lib.PatternBase.GetPatternByName(System.String)">
+            <summary>връща обект с указано име</summary>
+            <date>2019-04-2019</date>
+            <param name="namePattern">наименование на обекта, modelType</param>
+            <returns>обект от тип PatternBase или null не съществува</returns>
+        </member>
+        <member name="M:SmartTools.Lib.PatternBase.GetFeature(System.String,System.Boolean)">
+            <summary>връща указател към feature</summary>
+            <date>2019-004-08</date>
+            <param name="name">наименование на feature</param>
+            <returns>указател към feature с търсеното наименование, 
+            null ако не е открит feature</returns>
+        </member>
+        <member name="M:SmartTools.Lib.PatternBase.Contour(System.String,System.Int32)">
+            <summary>връща контур от скица</summary>
+            <date>2019-04-10</date>
+            <param name="nameSketch">наименование на скицата</param>
+            <param name="contour">номер на контура, 0 базиран индекс</param>
+            <returns>SketchContour или null ако не съществува</returns>
+        </member>
+        <member name="M:SmartTools.Lib.PatternBase.RenameFeature(System.String,System.String,System.Boolean)">
+            <summary>преименува обект</summary>
+            <date>2019-04-08</date>
+            <param name="oldName">старо наименование</param>
+            <param name="newName">ново наименование</param>
+            <param name="fullOldName">фалг указващ дали старото наименование е 
+            пълно, или е част, с която започва старото наименование</param>
+            <returns>True обекта е преименуван, False не е преименуван</returns>
+        </member>
+        <member name="M:SmartTools.Lib.PatternBase.RealAngle(System.Double)">
+            <summary>изчислява реалния ъгъл в координатна система, позиция 0 - север, посока на нарастване - по часовниковата стрелка</summary>
+            <date>2019-04-08</date>
+            <param name="relativeАngle">стойност на ъгъла в модела</param>
+            <returns>стойност на реалния ъгъл</returns>
+        </member>
+        <member name="M:SmartTools.Lib.PatternBase.Axis(System.String,System.String,System.String)">
+            <summary>създава ос като сечение на две равнини</summary>
+            <date>2019-04-08</date>
+            <param name="plane1">наименование на равнина 1</param>
+            <param name="plane2">наименование на равнина 2</param>
+            <param name="nameAxis">наименование на оста</param>
+        </member>
+        <member name="M:SmartTools.Lib.PatternBase.CreateSurface(System.Double,System.Boolean,System.String,System.String)">
+            <summary>създава повърхност около модела</summary>
+            <data>2019-04-09</data>
+            <param name="offset">отстояние от стената</param>
+            <param name="location">местоположение на повърхнината, 
+                   TRUE от външната страна, FALSE от вътрешната страна</param>
+            <param name="nameSurfaceBody">наименование на повърхнината</param>
+            <param name="nameSurfaceSketch">хаименование на скицата</param>
+        </member>
+        <member name="M:SmartTools.Lib.PatternBase.SketchForCone(System.Boolean)">
+            <summary>създава скица за 3D модела на КОНУС/капак, дъно/</summary>
+            <date>2019-04-10</date>
+            <param name="cover">тип на конуса, TRUE капак, FALSE дъно</param>
+        </member>
+        <member name="M:SmartTools.Lib.PatternBase.CreateConeBody(System.Boolean)">
+            <summary>създава 3D модел на КОНУС/капак, дъно/</summary>
+            <date>2019-04-09</date>
+            <param name="cover">тип на конуса, TRUE капак, FALSE дъно</param>
+        </member>
+        <member name="M:SmartTools.Lib.PatternBase.SketchWeldSeam(System.Double)">
+            <summary>създава скицата за модела визуализиращ заваръчния шев</summary>
+            <date>2019-04-08</date>
+        </member>
+        <member name="M:SmartTools.Lib.PatternBase.CreateWeldSeam(System.Double,System.String,System.Boolean)">
+            <summary>създава визуализация на заваръчния шев</summary>
+            <date>2019-04-08</date>
+        </member>
+        <member name="M:SmartTools.Lib.PatternBase.SetViewWeldSeam(System.Double)">
+            <summary>визуализира заваръчния шев с нови параметри </summary>
+            <date>2019-04-08</date>
+        </member>
+        <member name="M:SmartTools.Lib.PatternBase.AddSize(System.String,System.String,System.String,System.Double,System.Double,System.Double,System.Double,System.Boolean,System.String,System.String)">
+            <summary>
+            създава размер на обект или размер между два обекта</summary>
+            <date>201-04-08</date>
+            <param name="nameObject">наименование на обекта</param>
+            <param name="typeObject">тип на обекта</param>
+            <param name="nameSize">наименование на размера</param>
+            <param name="x">X координата на текстовото описание на размера</param>
+            <param name="y">Y координата на текстовото описание на размера</param>
+            <param name="z">Z координата на текстовото описание на размера</param>
+            <param name="val">стойност на размера</param>
+            <param name="readOnly">размера не може да се променя</param>
+            <param name="addNameObject">наименование на втори обект</param>
+            <param name="addTypeObject">тип на втория обект</param>
+        </member>
+        <member name="M:SmartTools.Lib.PatternBase.SetDimension(System.String,System.Double,SolidWorks.Interop.swconst.swSetValueInConfiguration_e,System.String)">
+            <summary>установява стойност на рамер</summary>
+            <date>2019-04-08</date>
+            <param name="name">наименование на размера</param>
+            <param name="value">стойност на размера</param>
+            <param name="config">конфигурация за която се отнася размера</param>
+            <param name="nameConfig">наименование на конфигурацията</param>
+        </member>
+        <member name="M:SmartTools.Lib.PatternBase.SuppressSizeInput">
+            <summary>поддиска въвеждането на стойност на размера от екрана</summary>
+            <date>2019-08-04</date>
+        </member>
+        <member name="P:SmartTools.Lib.PatternBase.nameDiameter">
+            <summary>наименование на размер за диаметър</summary>
+        </member>
+        <member name="P:SmartTools.Lib.PatternBase.nameHeight">
+            <summary>наименование на размер за височина</summary>
+        </member>
+        <member name="P:SmartTools.Lib.PatternBase.nameDistance">
+            <summary>наименование на размера за отстояние</summary>
+        </member>
+        <member name="P:SmartTools.Lib.PatternBase.nameAngle">
+            <summary>наименование на размер за ъгъл</summary>
+        </member>
+        <member name="P:SmartTools.Lib.PatternBase.nameAngleSide">
+            <summary>наименование за размера на рамото на ъгъл</summary>
+        </member>
+        <member name="P:SmartTools.Lib.PatternBase.namePlaneHole">
+            <summary>наименование на равнината на скицата за отвор</summary>
+        </member>
+        <member name="P:SmartTools.Lib.PatternBase.nameHole3D">
+            <summary>наименование на 3D модела на отвора</summary>
+        </member>
+        <member name="P:SmartTools.Lib.PatternBase.nameSketchAngle">
+            <summary>наименование на скицата за изобразяване на заваръчния шев</summary>
+        </member>
+        <member name="P:SmartTools.Lib.PatternBase.nameAngleView">
+            <summary>наименование на ъгъла визуализиращ заваръчния шев</summary>
+        </member>
+        <member name="P:SmartTools.Lib.PatternBase.nameSideTriangle">
+            <summary>наименование на страната на равнобедрения триъгълник за заваръчния шев</summary>
+        </member>
+        <member name="P:SmartTools.Lib.PatternBase.nameRadiusTopBody">
+            <summary>наименование на радиуса при върха на дъното или капака</summary>
+        </member>
+        <member name="P:SmartTools.Lib.PatternBase.nameXWeldSeam">
+            <summary>наименование на X-координатата на точката управляваща ъгловото отместване на заваръчния шев</summary>
+        </member>
+        <member name="P:SmartTools.Lib.PatternBase.nameYWeldSeam">
+            <summary>наименование на Y-координатата на точката управляваща ъгловото отместване на заваръчния шев</summary>
+        </member>
+        <member name="P:SmartTools.Lib.PatternBase.nameInternalSurfaceSketch">
+            <summary>наименование на скицата за вътрешната помощна повърхнина</summary>
+        </member>
+        <member name="P:SmartTools.Lib.PatternBase.nameExternalSurfaceSketch">
+            <summary>наименование на скицата за външната помощна повърхнина</summary>
+        </member>
+        <member name="P:SmartTools.Lib.PatternBase.nameSketchEnd">
+            <summary>наименование на скицата оформяща вътрешния диаметър на отвора</summary>
+        </member>
+        <member name="P:SmartTools.Lib.PatternBase.nameInternalSurface">
+            <summary>наименование на вътрешната помощната повърхнина</summary>
+        </member>
+        <member name="P:SmartTools.Lib.PatternBase.nameExternalSurface">
+            <summary>наименование на външната помощната повърхнина</summary>
+        </member>
+        <member name="P:SmartTools.Lib.PatternBase.swSketch">
+            <summary>наименование на тип за скица в SW</summary>
+        </member>
+        <member name="P:SmartTools.Lib.PatternBase.swExtSketchSegment">
+            <summary>наименование на тип елемент извън работната равнина в SW</summary>
+        </member>
+        <member name="P:SmartTools.Lib.PatternBase.swSurfaceBody">
+            <summary>наименование на тип за помощна равнина</summary>
+        </member>
+        <member name="P:SmartTools.Lib.PatternBase.swRefSurface">
+            <summary>наименование на тип за помощно тяло</summary>
+        </member>
+        <member name="P:SmartTools.Lib.PatternBase.sgVertical">
+            <summary>ограничение за вертикалност на елемент в SW</summary>
+        </member>
+        <member name="P:SmartTools.Lib.PatternBase.sgSymmetric">
+            <summary>ограничение за симетричност между избрани елементи</summary>
+        </member>
+        <member name="P:SmartTools.Lib.PatternBase.sgSameLength">
+            <summary>ограничение за еднаква дължина за избрани елементи</summary>
+        </member>
+        <member name="P:SmartTools.Lib.PatternBase.sgCoincident">
+            <summary>ограничение за съвпадение на два избрани елемента</summary>
+        </member>
+        <member name="P:SmartTools.Lib.PatternBase.sgPerpendicular">
+            <summary>ограничение за перпендикплярност на избрани елементи</summary>
+        </member>
+        <member name="M:SmartTools.Lib.PatternBase.FullName(System.String,System.String)">
+            <summary>връща пълното име на обект</summary>
+            <param name="feature">наименование на обекта</param>
+            <param name="typeFeature">тип на обекта</param>
+            <returns>пълното име на обекта</returns>
+        </member>
+        <member name="M:SmartTools.Lib.PatternBase.AddDimensionPoint(SolidWorks.Interop.sldworks.SketchPoint,System.String,System.String,System.String,System.Boolean)">
+            <summary>създава размер към точка и елемент от скица</summary>
+            <param name="point">обект към точката</param>
+            <param name="nameElement">наименование на еленет от скицата</param>
+            <param name="typeElement">тип на елемент от скицата</param>
+            <param name="nameDimension">наименование на размера</param>
+            <param name="vertical">вертикален размер - TRUE, хоризонтален размер -FALSE</param>
+        </member>
+        <member name="M:SmartTools.Lib.PatternBase.RenameDimension(System.String,System.String,System.Boolean)">
+            <summary>преименура размер</summary>
+            <param name="oldName">старо наименование на размера</param>
+            <param name="newName">ново наименование на размера</param>
+            <param name="read">размера е само за четене</param>
+        </member>
+        <member name="M:SmartTools.Lib.PatternBase.CreatingWeldingSeamSketch">
+            <summary>създава скица за заваръчния шев на мантел, дъно и капак</summary>
+        </member>
+        <member name="M:SmartTools.Lib.PatternBase.RotateWeldSeam">
+            <summary>завърта на заваръчния шев на исканото ъглово отместване</summary>
+        </member>
+        <member name="M:SmartTools.Lib.PatternBase.CreatingWeldingSeam">
+            <summary>изгражда изобразяването на заваръчния шев с отнемане на материал</summary>
+        </member>
+        <member name="M:SmartTools.Lib.PatternBase.AngleSketch(System.String,System.String,System.Double,System.String,System.Double,System.String,System.Double,System.String)">
+            <summary>създава скица на ъгъл</summary>
+            <param name="plane">наименование на равнината, където се създава скицата</param>
+            <param name="nameSketch">наименование на скицата</param>
+            <param name="angle">стойност на ъгъла за първоначално изграждане на скицата</param>
+            <param name="nameAngle">наименование на ъгъла на завъртане</param>
+            <param name="angleView">стойност на "видимия" ъгъл</param>
+            <param name="nameAngleView">наименование на "видимия" ъгъл</param>
+            <param name="side">размер на рамото на ъгъла</param>
+            <param name="nameSide">наименование на размера на рамото на ъгъла</param>
+        </member>
+        <member name="M:SmartTools.Lib.PatternBase.RotateAngle(SolidWorks.Interop.sldworks.SketchLine,System.Double,System.Double,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            завърта скица на зададен ъгъл
+            </summary>
+            <param name="line">базова линия в скицата</param>
+            <param name="angle">ъгъл на завъртане</param>
+            <param name="side">дължина на рамото</param>
+            <param name="nameSketch">наименование на скицата</param>
+            <param name="nameSide">наименование на размера на рамота</param>
+            <param name="nameAngle">наименование на размера на ъгъла</param>
+            <param name="nameLine">наименование на базоват линия</param>
+        </member>
+        <member name="M:SmartTools.Lib.PatternBase.RotateAngle_(System.String,System.String,System.Double,System.Double)">
+            <summary>завърта скица на ъгъл спрямо 0 позиция в координатната система</summary>
+            <param name="nameAngle">наименование на ъгъла за завъртане</param>
+            <param name="nameSketch">наименование на скицата</param>
+            <param name="angle">стойност на новия ъгъл</param>
+            <returns>абсолютна стойност на ъгъла, на който е завъртането</returns>
+        </member>
+        <member name="P:SmartTools.Lib.PatternBase.swLine">
+            <summary>наименование на тип за линия в SW</summary>
+        </member>
+        <member name="P:SmartTools.Lib.PatternBase.swBody">
+            <summary>наименование на тип за тяло в SW</summary>
+        </member>
+        <member name="P:SmartTools.Lib.PatternBase.swDimension">
+            <summary>наименование на тип за размер в SW</summary>
+        </member>
+        <member name="P:SmartTools.Lib.PatternBase.swExtrudeThin">
+            <summary>стандартно наименование на изтегляне на материал с дебелина на стена</summary>
+        </member>
+        <member name="P:SmartTools.Lib.PatternBase.swCutExtrude">
+            <summary>стандартно наименование на изтегляне с отнемане на материал</summary>
+        </member>
+        <member name="M:SmartTools.Lib.PatternBase.DelConstraints(System.String,System.String)">
+            <summary>изтрива ограничение за елемент от скица</summary>
+            <param name="nameSketchSegment">наименование на елемента</param>
+            <param name="nameConstraint">наименование на ограничението</param>
+        </member>
+        <member name="M:SmartTools.Lib.PatternBase.IsLastFeature(System.String)">
+            <summary>
+            проверява дали фичър с <paramref name="name"/> е последен в дървото
+            </summary>
+            <param name="name">наименование на фичъра</param>
+            <returns>TRUE последен фичър</returns>
+        </member>
+        <member name="M:SmartTools.Lib.PatternBase.Rectangle(System.Double,System.Double,System.String,System.String,System.String)">
+            <summary>
+            създава правоъгълник с пресечна точка на диагоналите в началото
+            на координатната система
+            </summary>
+            <param name="width">ширина в метри</param>
+            <param name="length">дължина в метри</param>
+            <param name="nameWidth">наименование на размера по ширината</param>
+            <param name="nameLength">наименование на размера по дължината</param>
+            <param name="nameSketch">наименование на скицата</param>
+        </member>
+        <member name="M:SmartTools.Lib.PatternBase.Circle(System.Double,System.Double,System.Double,System.Double,System.String,System.String)">
+            <summary>създава окръжност по център и радиус</summary>
+            <param name="x">X координата на центъра</param>
+            <param name="y">Y координата на центъра</param>
+            <param name="z">Z координата на центъра</param>
+            <param name="diameter">диаметър</param>
+            <param name="nameDiameter">наименование на размера на диаметъра</param>
+            <param name="nameSketch">наименование на скицата</param>
+        </member>
+        <member name="M:SmartTools.Lib.PatternBase.Extrusion(System.String,System.Double,System.String,System.String,System.Double,System.String,System.Int32)">
+            <summary>изгражда 3D модела от избрана скица </summary>
+            <param name="sketch">наименование на скицата</param>
+            <param name="height">височина на 3D модела</param>
+            <param name="nameHeight">наименование на размера за височина</param>
+            <param name="nameExtrude">наименование на 3D модела</param>
+            <param name="thin">дебелина на стената</param>
+            <param name="nameThin">наименование на размера на дебелината на стената</param>
+            <param name="thinDir">посока на стената, 1 навътре от диаметъра, 0 - навън</param>
+        </member>
+        <member name="M:SmartTools.Lib.PatternBase.ExtrudeSurface(System.String,System.Double,System.String)">
+            <summary>
+            Създава работна повърхнина
+            </summary>
+            <param name="sketch">скица за повърхнината</param>
+            <param name="height">височина на повърхнината</param>
+            <param name="name">наименование на повърхнината</param>
+        </member>
+        <member name="M:SmartTools.Lib.PatternBase.CreatePlane(System.String,System.Double,System.String,System.String)">
+            <summary>
+            Създава работна равнина спрямо basePlane завъртяна на ъгъл angle 
+            </summary>
+            <param name="basePlane">наименование на базовата равнина</param>
+            <param name="angle">ъгъл на завъртане</param>
+            <param name="namePlane">наименование на новата равнина</param>
+            <param name="nameAngle">наименование на размера на ъгъла</param>
+        </member>
+        <member name="P:SmartTools.Lib._PatternBase.ModelType">
+            <summary>Тип на модела</summary>
+        </member>
+        <member name="P:SmartTools.Lib._PatternBase.DocType">
+            <summary>Тип на документа</summary>
+        </member>
+        <member name="P:SmartTools.Lib._PatternBase.Name">
+            <summary>Наименование на модела</summary>
+        </member>
+        <member name="P:SmartTools.Lib._PatternBase.Hint">
+            <summary>
+            Информация за инструмента, появяваща се в лентата на състояние в SW
+            </summary>
+        </member>
+        <member name="P:SmartTools.Lib._PatternBase.ToolTip">
+            <summary>
+            Информация за инструмента, появяваща се, когато показалеца на 
+            мишкта е върху инструмента
+            </summary>
+        </member>
+        <member name="P:SmartTools.Lib._PatternBase.swModel">
+            <summary> Документ използван от модела</summary>
+        </member>
+        <member name="F:SmartTools.Lib._PatternBase.FirstRebuild">
+            <summary>Първо изграждане на модела.</summary>
+        </member>
+        <member name="P:SmartTools.Lib._PatternBase.swPMPage">
+            <summary>
+            Изглед с облика на SW PropertyManager Page за въвеждане и 
+            редактиране на параметри на моделите използвани от add-In.
+            </summary>
+        </member>
+        <member name="P:SmartTools.Lib._PatternBase.pmpGroups">
+            <summary>
+            Списък с групите използвани от модела в swPMPage
+            </summary>
+        </member>
+        <member name="P:SmartTools.Lib._PatternBase.pmpLabels">
+            <summary>Списък с контролите на Labels в swPMPage</summary>
+        </member>
+        <member name="P:SmartTools.Lib._PatternBase.pmpRadioButtons">
+            <summary>Списък с контролите на RadioButtons в swPMPage</summary>
+        </member>
+        <member name="P:SmartTools.Lib._PatternBase.pmpCombobox">
+            <summary>Списък с контроли на Combobox в swPMPage</summary>
+        </member>
+        <member name="P:SmartTools.Lib._PatternBase.pmpNumberbox">
+            <summary>Списък с контроли на Numberbox в swPMPage</summary>
+        </member>
+        <member name="P:SmartTools.Lib._PatternBase.pmpCheckbox">
+            <summary>Списък с контроли на Checkbox в swPMPage</summary>
+        </member>
+        <member name="F:SmartTools.Lib._PatternBase.idLabel">
+            <summary>уникални номера/брояч на етикетите към контролите</summary>
+        </member>
+        <member name="P:SmartTools.Lib._PatternBase.e_Material">
+            <summary>
+            връща/записва номер на избран елемент от контрола Material
+            </summary>
+        </member>
+        <member name="P:SmartTools.Lib._PatternBase.e_MaterialItem">
+            <summary>
+            връща съдържанието на избран елемент от контрола Material
+            </summary>
+        </member>
+        <member name="P:SmartTools.Lib._PatternBase.e_Certificate">
+            <summary>
+            връща/записва номер на избран елемент от контрола Certificate
+            </summary>
+        </member>
+        <member name="P:SmartTools.Lib._PatternBase.e_CertificateItem">
+            <summary>
+            връща съдържанието на избран елемент от контрола Certificate
+            </summary>
+        </member>
+        <member name="P:SmartTools.Lib._PatternBase.e_Test">
+            <summary>
+            връща/записва номер на избран елемент от контрола Test
+            </summary>
+        </member>
+        <member name="P:SmartTools.Lib._PatternBase.e_TestItem">
+            <summary>връща съдържанието на избран елемент от контрола Test</summary>
+        </member>
+        <member name="P:SmartTools.Lib._PatternBase.e_Standatd">
+            <summary>
+            връща/записва номер на избран елемент от контрола Standard
+            </summary>
+        </member>
+        <member name="P:SmartTools.Lib._PatternBase.e_StandardItem">
+            <summary>връща съдържанието на избран елемент от контрола Standard</summary>
+        </member>
+        <member name="P:SmartTools.Lib._PatternBase.e_Quality">
+            <summary>
+            връща/записва номер на избран елемент от контрола Quality
+            </summary>
+        </member>
+        <member name="P:SmartTools.Lib._PatternBase.e_QualityItem">
+            <summary>връща съдържанието на избран елемент от контрола Quality</summary>
+        </member>
+        <member name="P:SmartTools.Lib._PatternBase.e_NoDrawing">
+            <summary>връща/записва стойност на контрола NoDrawing</summary>
+        </member>
+        <member name="P:SmartTools.Lib._PatternBase.e_Length">
+            <summary>връща/записва стойност на контрола Length</summary>
+        </member>
+        <member name="P:SmartTools.Lib._PatternBase.e_Height">
+            <summary>връща/записва стойност на контрола Height</summary>
+        </member>
+        <member name="P:SmartTools.Lib._PatternBase.e_Width">
+            <summary>връща/записва стойност на контрола Width</summary>
+        </member>
+        <member name="P:SmartTools.Lib._PatternBase.e_Thickness">
+            <summary>връща/записва стойност на контрола Thickness</summary>
+        </member>
+        <member name="P:SmartTools.Lib._PatternBase.e_Diameter">
+            <summary>връща/записва стойност на контрола Diameter</summary>
+        </member>
+        <member name="P:SmartTools.Lib._PatternBase.e_WeldingSeam">
+            <summary>връща/записва стойност на контрола WeldingSeam</summary>
+        </member>
+        <member name="P:SmartTools.Lib._PatternBase.e_Clockwise">
+            <summary>връща/записва стойност на контрола Clockwise</summary>
+        </member>
+        <member name="P:SmartTools.Lib._PatternBase.e_AntiClockwise">
+            <summary>връща/записва стойност на контрола AntiClockwise</summary>
+        </member>
+        <member name="P:SmartTools.Lib._PatternBase.e_NortPosition">
+            <summary>връща/записва стойност на контрола NortPosition</summary>
+        </member>
+        <member name="P:SmartTools.Lib._PatternBase.e_EastPosition">
+            <summary>връща/записва стойност на контрола EastPosition</summary>
+        </member>
+        <member name="P:SmartTools.Lib._PatternBase.e_SoutPositionh">
+            <summary>връща/записва стойност на контрола SoutPositionh</summary>
+        </member>
+        <member name="P:SmartTools.Lib._PatternBase.e_WestPosition">
+            <summary>връща/записва стойност на контрола WestPosition</summary>
+        </member>
+        <member name="M:SmartTools.Lib._PatternBase.AddControlsOnPMPage">
+            <summary>Добавя контролите в swPMPage</summary>
+        </member>
+        <member name="M:SmartTools.Lib._PatternBase.EditPattern">
+            <summary>Редактира съществуващия модел/инструмент</summary>
+        </member>
+        <member name="M:SmartTools.Lib._PatternBase.SetDefaultValue">
+            <summary>
+            Записва в контролите на swPMPage стойности по подразбиране
+            </summary>
+        </member>
+        <member name="M:SmartTools.Lib._PatternBase.BuildModel">
+            <summary>Създава 3D модела</summary>
+        </member>
+        <member name="M:SmartTools.Lib._PatternBase.SetValueControls">
+            <summary>Установява стойностите на размерите от въведените</summary>
+        </member>
+        <member name="M:SmartTools.Lib._PatternBase.SaveFileProperties">
+            <summary>Съхранява характеристиките на модела във File Properties</summary>
+        </member>
+        <member name="M:SmartTools.Lib._PatternBase.CreateFolder">
+            <summary>Създава папка включваща построенията за модела</summary>
+        </member>
+        <member name="M:SmartTools.Lib._PatternBase.#ctor">
+            <summary>Създава обект на модела</summary>
+        </member>
+        <member name="M:SmartTools.Lib._PatternBase.SetSWPropertyies(System.String)">
+            <summary>подготвя за работа обекта с описанията на модела</summary>
+            <param name="nameConfiguration">наименование на конфигурацията</param>
+        </member>
+        <member name="M:SmartTools.Lib._PatternBase.Execute">
+            <summary>
+            Изпълнява модела. Извиква от PushButton() на SmartTools
+            </summary>
+        </member>
+        <member name="M:SmartTools.Lib._PatternBase.NewPattern(System.Boolean)">
+            <summary>Създава нов модел/инструмент</summary>
+            <param name="ThisGraphicArea">
+            Указва дали да се използва текущия документ или
+            да се съдаде нов документ
+            </param>
+        </member>
+        <member name="M:SmartTools.Lib._PatternBase.Rebuild">
+            <summary>
+            Изгражда/Възстановява модела. Извиква се от OnClose() или OnPreview().
+            </summary>
+        </member>
+        <member name="M:SmartTools.Lib._PatternBase.CreatePMPage">
+            <summary>Създава swPMPage</summary>
+            <returns>TRUE създадена swPMPage, FALSE възникнал проблем</returns>
+        </member>
+        <member name="M:SmartTools.Lib._PatternBase.IDControls(SmartTools.Prime.Controls_e)">
+            <summary>Връща контролата като уникален номер</summary>
+            <param name="ctrl">наименование на контролата</param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartTools.Lib._PatternBase.AddGroup(SmartTools.Prime.Groups_e)">
+            <summary>Създава група за контроли в swPMPage, ако не съществува</summary>
+            <param name="group">код на групата</param>
+        </member>
+        <member name="M:SmartTools.Lib._PatternBase.Options(System.Boolean,System.Boolean,System.Boolean)">
+            <summary>Връща исканите опции за елемент от PM page</summary>
+            <param name="enabled">разрешава работа с елемента</param>
+            <param name="visible">показва елемента</param>
+            <param name="smallGap">по-малко отсстояние от предходния елемент</param>
+            <returns>комбинация от избраните флагове</returns>
+        </member>
+        <member name="M:SmartTools.Lib._PatternBase.AddLabel(SmartTools.Prime.Groups_e,System.Int32@,System.String)">
+            <summary>Създава контрола от тип ЕТИКЕТ</summary>
+            <param name="group">група в която се създава етикета</param>
+            <param name="id">уникален номер на етикета</param>
+            <param name="caption">наименование на етикета</param>
+            <returns>обект от тип IPropertyManagerPageLabel</returns>
+        </member>
+        <member name="M:SmartTools.Lib._PatternBase.AddRadioButton(SmartTools.Prime.Groups_e,SmartTools.Prime.Controls_e,System.String,System.Boolean,System.Boolean,System.Int32@,System.String)">
+            <summary>Създава контрола от тип radioButtons</summary>
+            <param name="group">група в която се създава радио бутона</param>
+            <param name="id">уникален номер на радио бутона</param>
+            <param name="caption">наименование на радио бутона</param>
+            <returns>обект от тип IPropertyManagerPageOption</returns>
+        </member>
+        <member name="M:SmartTools.Lib._PatternBase.AddCombobox(SmartTools.Prime.Groups_e,SmartTools.Prime.Controls_e,System.String,System.String,System.String[],System.Int32@,System.String,System.Int16,System.Int16)">
+            <summary>Създава контрола от тип Combobox</summary>
+            <param name="group">група в която се създава Combobox</param>
+            <param name="id">уникален номер на Combobox</param>
+            <param name="caption">наименование на Combobox</param>
+            <param name="tip">подсказващата информация Combobox</param>
+            <param name="items">масив с елементите в Combobox</param>
+            <param name="idLabel">уникален номер на етикета към контролата</param>
+            <param name="lblCaption">надпис на етикета</param>
+            <param name="selection">индекс на избран елемент</param>
+            <param name="height">размер на областа в която се изобразяват елементите</param>
+            <returns>обект от тип IPropertyManagerPageCombobox</returns>
+        </member>
+        <member name="M:SmartTools.Lib._PatternBase.AddNumberbox(SmartTools.Prime.Groups_e,SmartTools.Prime.Controls_e,System.String,System.String,System.Int32@,System.String,System.Double,System.Double,System.Double,SolidWorks.Interop.swconst.swNumberboxUnitType_e)">
+            <summary>Създава контрола от тип Numberbox и етикет към нея</summary>
+            <param name="group">група в която се създава Numberbox</param>
+            <param name="id">уникален номер на контролата</param>
+            <param name="caption">наименование на контролата</param>
+            <param name="tip">подсказваща информация за контролата</param>
+            <param name="idLabel">уникален номер на етикета към контролата</param>
+            <param name="lblCaption">надпис на етикета</param>
+            <param name="val">първоначална стойност</param>
+            <param name="min">минимално допустима стойност</param>
+            <param name="max">максимално допустима стойност</param>
+            <param name="unit">вид на мерната единица</param>
+            <returns>указател към контролата от тип IPropertyManagerPageNumberbox</returns>
+        </member>
+        <member name="M:SmartTools.Lib._PatternBase.AddCheckbox(SmartTools.Prime.Groups_e,SmartTools.Prime.Controls_e,System.String,System.Boolean)">
+            <summary>Създава контрола от тип Checkbox</summary>
+            <param name="group">група в която се създава Checkbox</param>
+            <param name="id">уникален номер на контролата</param>
+            <param name="caption">надпис на контролата</param>
+            <param name="check">флаг за маркиране на контролата</param>
+            <returns>обект от тип IPropertyManagerPageCheckbox</returns>
+        </member>
+        <member name="M:SmartTools.Lib._PatternBase.FormatParameter(System.String,System.String)">
+            <summary>
+            Връща форматиран стринг за параметър използван във фючерите
+            </summary>
+            <param name="arg0">аргумент 1</param>
+            <param name="arg2">аргумент 2</param>
+            <returns>arg0@arg1</returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:SmartTools.Lib._PatternBase.IsEmptyModel" -->
+        <member name="M:SmartTools.Lib._PatternBase.PatternDefName">
+            <summary> Връща наименованието на новата графична област за модела</summary>
+            <returns>Наименованието на графичната област</returns>
+        </member>
+        <member name="M:SmartTools.Lib._PatternBase.RenameFeature(System.String,System.String)">
+            <summary>
+            Преименува последно създаден фичер, името на който започва с oldName и
+            задължително завършва с цифри
+            </summary>
+            <param name="oldName">началото на фичера за преименоване</param>
+            <param name="newName">ново име на фичера</param>
+            <returns>TRUE при открит и преимениван фичер, FALSE не е открит фичер</returns>
+        </member>
+        <member name="M:SmartTools.Lib._PatternBase.SuppressDimInput">
+            <summary>Подтиска въвеждането на стойност на размер от екрана</summary>
+        </member>
+        <member name="M:SmartTools.Lib._PatternBase.AddDimension(System.String,System.String,System.String,System.Double,System.Double,System.Double,System.Double,System.String,System.String,System.Boolean)">
+            <summary>Създава размер за обект или между два обекта</summary>
+            <param name="nameObject1">наименование на основен обект</param>
+            <param name="typeObject1">тип на основен обект</param>
+            <param name="nameDim">наименование на размера</param>
+            <param name="x">X координата на надписа</param>
+            <param name="y">Y координата на надписа</param>
+            <param name="z">Z координата на надписа</param>
+            <param name="valDim">стойност на размера</param>
+            <param name="nameObject2">наименование на втория обект</param>
+            <param name="typeObject2">тип на втория обект</param>
+            <param name="readOnly">размера не се променя</param>
+        </member>
+        <member name="M:SmartTools.Lib._PatternBase.SelectPlane(System.String)">
+            <summary>Избира равнина</summary>
+            <param name="plane">наименование на равнината</param>
+        </member>
+        <member name="M:SmartTools.Lib._PatternBase.CreateRectangle(System.Double,System.Double,System.String,System.String,System.String)">
+            <summary>
+            Създава скица на правоъгълник с център центъра на координатната система
+            </summary>
+            <param name="width">ширина</param>
+            <param name="length">дължина</param>
+            <param name="nameDim1">наиемнование на дължината</param>
+            <param name="nameDim2">наименование на ширината</param>
+            <param name="sketch">ново наименование на скицата</param>
+        </member>
+        <member name="M:SmartTools.Lib._PatternBase.CreateCircle(System.Double,System.Double,System.Double,System.Double,System.String,System.String)">
+            <summary>
+            Създава скица на окръжност по център и диаметър
+            </summary>
+            <param name="x">X-координата на центъра</param>
+            <param name="y">Y-координата на центъра</param>
+            <param name="z">Z-координата на центъра</param>
+            <param name="diameter">радиус</param>
+            <param name="nameDiameter">наименование на диаметъра</param>
+            <param name="nameSketch">наименование на скицата</param>
+        </member>
+        <member name="M:SmartTools.Lib._PatternBase.Extrude(System.String,System.Double,System.String,System.String,System.Double,System.String,System.Int32)">
+            <summary>Създава 3D модела от скица</summary>
+            <param name="sketch">наименование на скица</param>
+            <param name="depth">височина на избутване скицата, 3D модел</param>
+            <param name="nameExtrude">ново наименование на feature</param>
+            <param name="nameDepth">наименование на размера на височината</param>
+        </member>
+        <member name="T:SmartTools.Lib.PatternPMPageBase">
+            <summary>Създава PropertyManager Page по подобие на SW</summary>
+        </member>
+        <member name="P:SmartTools.Lib.PatternPMPageBase.pmpGroups">
+            <summary>библиотека с използваните групи с swPMPage</summary>
+            <date>2019-04-08</date>
+        </member>
+        <member name="P:SmartTools.Lib.PatternPMPageBase.pmpLabel">
+            <summary>библиотека с използваните етикети в swPMPage</summary>
+            <date>2019-04-08</date>
+        </member>
+        <member name="P:SmartTools.Lib.PatternPMPageBase.pmpRadioButton">
+            <summary>библиотека с използваните контроли от тип Radio Button</summary>
+            <date>2019-04-08</date>
+        </member>
+        <member name="F:SmartTools.Lib.PatternPMPageBase.idPMPLabel">
+            <summary>уникален номер на етикетите в swPMPage</summary>
+            <date>2019-04-08</date>
+        </member>
+        <member name="P:SmartTools.Lib.PatternPMPageBase.holeNumber">
+            <summary>бояч на отворите</summary>
+            <date>2019-04-08</date>
+        </member>
+        <member name="P:SmartTools.Lib.PatternPMPageBase.diameter">
+            <summary>диаметър на обект</summary>
+            <date>2019-04-08</date>
+        </member>
+        <member name="P:SmartTools.Lib.PatternPMPageBase.thickness">
+            <summary>дебелина на стената на обект</summary>
+            <date>2019-04-08</date>
+        </member>
+        <member name="P:SmartTools.Lib.PatternPMPageBase.bendRadius">
+            <summary>радиус на бертване на дъното или капака</summary>
+            <date>2019-04-08</date>
+        </member>
+        <member name="P:SmartTools.Lib.PatternPMPageBase.angleInclination">
+            <summary>ъгъл на наклона на дъното или капака</summary>
+            <date>2019-04-08</date>
+        </member>
+        <member name="P:SmartTools.Lib.PatternPMPageBase.addOnSize">
+            <summary>добакка към линеен размер</summary>
+            <date>2019-04-08</date>
+        </member>
+        <member name="P:SmartTools.Lib.PatternPMPageBase.diameterTopCone">
+            <summary>стойност на диаметъра на отвора при въха на конуса</summary>
+            <date>2019-04-08</date>
+        </member>
+        <member name="P:SmartTools.Lib.PatternPMPageBase.shoulderWeldingSeam">
+            <summary>размер на рамото на ъгъла за визуализация на заваръчния шев</summary>
+            <date>2019-04-10</date>
+        </member>
+        <member name="P:SmartTools.Lib.PatternPMPageBase.dimExplodeExternal">
+            <summary>отстояние от формообразуващата на модела до височината на избушен отвор навън</summary>
+            <date>2019-04-11</date>
+        </member>
+        <member name="M:SmartTools.Lib.PatternPMPageBase.Options(System.Boolean,System.Boolean,System.Boolean)">
+            <summary>връща комбинация от исканите опции за контрола в swPMPage</summary>
+            <date>2019-04-08</date>
+            <param name="enabled">разрешава работа с елемента</param>
+            <param name="visible">визуализира елемента</param>
+            <param name="smallGap">по-малко отстояние от предходната контрола</param>
+            <returns>комбинация от опциите</returns>
+        </member>
+        <member name="M:SmartTools.Lib.PatternPMPageBase.AddGroup(SmartTools.Prime.Groups_e)">
+            <summary>добавя група в swPMPage, ако не съществува</summary>
+            <date>2019-04-08</date>
+            <param name="group">код на групата</param>
+        </member>
+        <member name="M:SmartTools.Lib.PatternPMPageBase.AddLabel(SmartTools.Prime.Groups_e,SmartTools.Prime.Controls_e)">
+            <summary>добавя етикет към библиотеката от етикети</summary>
+            <date>2019-04-08</date>
+            <param name="group">група в която се добавя</param>
+            <param name="control">контрола кък която се свързва</param>
+        </member>
+        <member name="M:SmartTools.Lib.PatternPMPageBase.AddRadioButton(SmartTools.Prime.Groups_e,SmartTools.Prime.Controls_e,System.Boolean,System.Boolean,System.Boolean,System.Boolean)">
+            <summary>добавя радио бутон в библиотеката</summary>
+            <date>2019-04-08</date>
+            <param name="group">група в която се дибавя</param>
+            <param name="control">уникален номер на радио бутона</param>
+            <param name="check">флаг Избран/Не избран, True/False</param>
+            <param name="firstInGroup">флаг за указване начало на група</param>
+            <param name="isLabel">флаг указващ наличие на етикет </param>
+            <param name="enable">флаг Разрешен/Забранен, True/False</param>
+        </member>
+        <member name="M:SmartTools.Lib.PatternPMPageBase.Value(SmartTools.Prime.Controls_e)">
+            <summary>връща въведена/избрана стойност от контрола в swPMPage</summary>
+            <date>2019-04-08</date>
+            <param name="control">тип на контролата</param>
+            <returns>стойност на контролата</returns>
+        </member>
+        <member name="M:SmartTools.Lib.PatternPMPageBase.dblValue(SmartTools.Prime.Controls_e)">
+            <summary>
+            връща стойноста на контрола, като реално чиало. Ако контролата не 
+            е от тип релано чиало се връща най-малкото реално чиало в C#
+            </summary>
+            <date>2019-04-08</date>
+            <param name="control">тип на контролата</param>
+            <returns>стойноста на контролата</returns>
+        </member>
+        <member name="P:SmartTools.Lib.PatternPMPageBase.height">
+            <summary>височина на обект</summary>
+        </member>
+        <member name="P:SmartTools.Lib.PatternPMPageBase.distance">
+            <summary>отстояние на обект от центъра</summary>
+        </member>
+        <member name="P:SmartTools.Lib.PatternPMPageBase.angularOffset">
+            <summary>
+            ъглово отместване по координатанат система на обект
+            </summary>
+        </member>
+        <member name="P:SmartTools.Lib.PatternPMPageBase.weldSeamAngle">
+            <summary>ъглово отместване на заваръчния шев</summary>
+        </member>
+        <member name="P:SmartTools.Lib.PatternPMPageBase.currentAngle">
+            <summary>
+            текуща стойност на ъгловото отместване на елемет от модела
+            </summary>
+        </member>
+        <member name="P:SmartTools.Lib.PatternPMPageBase.defAngleView">
+            <summary>стойност на ъгъла визуализиращ заваръчния щев</summary>
+        </member>
+        <member name="P:SmartTools.Lib.PatternPMPageBase.wsPoint">
+            <summary>точка за управление на ъгловото отместване на заваръчния шев</summary>
+        </member>
+        <member name="P:SmartTools.Lib.PatternPMPageBase.holePoint">
+            <summary>точка за управление на ъгловото отместване на отвор</summary>
+        </member>
+        <member name="P:SmartTools.Lib.PatternPMPageBase.wsBisector">
+            <summary>ъглополовяща на ъгъла за визуализация на заваръчния шев</summary>
+        </member>
+        <member name="P:SmartTools.Lib.PatternPMPageBase.holeArc">
+            <summary>окръжност за отвор</summary>
+        </member>
+        <member name="P:SmartTools.Lib.PatternPMPageBase.pmpCombobox">
+            <summary>библиотека с използваните контроли от тип Combobox</summary>
+        </member>
+        <member name="P:SmartTools.Lib.PatternPMPageBase.pmpNumberbox">
+            <summary>библиотека с използваните контроли от тип Numberbox</summary>
+        </member>
+        <member name="P:SmartTools.Lib.PatternPMPageBase.pmpCheckbox">
+            <summary>библиотека с използваните контроли от тип Checkbox</summary>
+        </member>
+        <member name="M:SmartTools.Lib.PatternPMPageBase.AddCombobox(SmartTools.Prime.Groups_e,SmartTools.Prime.Controls_e,System.String[],System.Int16,System.Int16)">
+            <summary>добавя контрола от тип Combobox</summary>
+            <param name="group">група в която се добавя</param>
+            <param name="control">уникален номер на контролата</param>
+            <param name="items">масив с елементрите</param>
+            <param name="height">размер на областта в която се жизуализират елементите</param>
+            <param name="selection">индекс на избран елемент</param>
+        </member>
+        <member name="M:SmartTools.Lib.PatternPMPageBase.AddNumberbox(SmartTools.Prime.Groups_e,SmartTools.Prime.Controls_e,System.Double,SolidWorks.Interop.swconst.swNumberboxUnitType_e,System.Double,System.Double)">
+            <summary>добавя контрола от тип Numberbox</summary>
+            <param name="group">група в която се добавя</param>
+            <param name="control">уникален номер на контролата</param>
+            <param name="val">стойност по подразбиране</param>
+            <param name="unit">мерна единица</param>
+            <param name="min">минимална стойност</param>
+            <param name="max">максимална стойност</param>
+        </member>
+        <member name="M:SmartTools.Lib.PatternPMPageBase.AddCheckbox(SmartTools.Prime.Groups_e,SmartTools.Prime.Controls_e,System.Boolean)">
+            <summary>
+            добавя контрола от тип Checkbox
+            </summary>
+            <param name="group">група в която се добавя</param>
+            <param name="control">уникален номер на контролата</param>
+            <param name="check">флаг за маркирн/ не маркиран</param>
+        </member>
+        <member name="M:SmartTools.Lib.PatternPMPageBase.Selection(SmartTools.Prime.Controls_e)">
+            <summary>връща индекс на избран елемент в Combobox</summary>
+            <param name="control">тип на контролата</param>
+            <returns>индекс на избрания елемент</returns>
+        </member>
+        <member name="M:SmartTools.Lib.PatternPMPageBase.ElementSelection(System.String,SmartTools.Prime.Controls_e)">
+            <summary>
+            връща индекса на елемент от списък на контрола в swPMPage
+            </summary>
+            <param name="element">стойност на търсения елемент</param>
+            <param name="control">контрола</param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartTools.Lib.PatternPMPageBase.SetSelection(SmartTools.Prime.Controls_e,System.Int16)">
+            <summary>
+            установява индекс на избран елемент в Combobox
+            </summary>
+            <param name="control">тип на контролата</param>
+            <param name="selection">индекс на избран елемент</param>
+        </member>
+        <member name="M:SmartTools.Lib.PatternPMPageBase.SetValue(SmartTools.Prime.Controls_e,System.Double)">
+            <summary>
+            установява стойност на контрола от тип Numberbox
+            </summary>
+            <param name="control">тип на контролата</param>
+            <param name="value">стойност</param>
+        </member>
+        <member name="M:SmartTools.Lib.PatternPMPageBase.SetChecked(SmartTools.Prime.Controls_e,System.Boolean)">
+            <summary>
+            установява избран/не избран на контроли Checkbox/Radio button
+            </summary>
+            <param name="control">тип на контролата</param>
+            <param name="check">избран/не избран</param>
+        </member>
+        <member name="M:SmartTools.Lib.PatternPMPageBase.ChangeCertificateOrTest(System.Int32,System.Int32)">
+            <summary>
+            управлява избора на Сертификат и Тест. Ако едната контрола е "-",
+            задължително и втората трябва да бъде "-"
+            </summary>
+            <param name="control">тип на контролата</param>
+            <param name="selection">индекс на избран елемент</param>
+        </member>
+        <member name="M:SmartTools.Lib.PatternPMPageBase.GetCoordinateSystem">
+            <summary>
+            поготвя за визуализация информацията за координатната система
+            </summary>
+        </member>
+        <member name="M:SmartTools.Lib.PatternPMPageBase.AddControlsOnPMPage">
+            <summary>добавя контролите в swPMPage свързани с модела</summary>
+        </member>
+        <member name="T:SmartTools.Lib.PatternFeatureBase">
+            <summary>осугурява информация и методи за обработка на FEATURES</summary>
+        </member>
+        <member name="P:SmartTools.Lib.PatternHandlerBase.swDocumentType">
+            <summary>тип на документ от допустмите в средата на SW</summary>
+        </member>
+        <member name="P:SmartTools.Lib.PatternHandlerBase.modelType">
+            <summary>тип на модела определен за приложението SmartTools</summary>
+        </member>
+        <member name="P:SmartTools.Lib.PatternHandlerBase.swPMPage">
+            <summary>
+            изглед с облика на SW PropertyManager Page за въвеждане и 
+            редактиране на параметри на моделите използвани от add-In.
+            </summary>
+        </member>
+        <member name="P:SmartTools.Lib.PatternHandlerBase.swDocument">
+            <summary>обект за достъп до документа използван от модела</summary>
+        </member>
+        <member name="P:SmartTools.Lib.PatternHandlerBase.swExtension">
+            <summary>обект за достъп функциите на модела</summary>
+        </member>
+        <member name="P:SmartTools.Lib.PatternHandlerBase.swSketchManager">
+            <summary>обект за достъп до функциите за работа със скиците</summary>
+        </member>
+        <member name="P:SmartTools.Lib.PatternHandlerBase.swFeatureManager">
+            <summary>обект за достъп да функциите за работа с фичърите</summary>
+        </member>
+        <member name="P:SmartTools.Lib.PatternHandlerBase.swSelectionMgr">
+            <summary>обект за достъп до избраните елемент</summary>
+        </member>
+        <member name="P:SmartTools.Lib.PatternHandlerBase.fileProperties">
+            <summary>обект за достъп до описанията на модела</summary>
+        </member>
+        <member name="P:SmartTools.Lib.PatternHandlerBase.initialCreation">
+            <summary>Първоначално изграждане на модела</summary>
+        </member>
+        <member name="P:SmartTools.Lib.PatternHandlerBase.notCreatedDoc">
+            <summary>флаг за създаден документ</summary>
+            <date>2019-04-10</date>
+        </member>
+        <member name="M:SmartTools.Lib.PatternHandlerBase.#ctor">
+            <summary>
+            Подготвя основните променливи за използване
+            </summary>
+        </member>
+        <member name="M:SmartTools.Lib.PatternHandlerBase.Execute">
+            <summary>Изпълнява модела.</summary>
+        </member>
+        <member name="M:SmartTools.Lib.PatternHandlerBase.Rebuild">
+            <summary>Изгражда/Възстановява модела</summary>
+        </member>
+        <member name="M:SmartTools.Lib.PatternHandlerBase.FilePropetyTab(System.String)">
+            <summary>Избира раздел с описанията на модела</summary>
+            <param name="name">наименование на раздела</param>
+        </member>
+        <member name="M:SmartTools.Lib.PatternHandlerBase.NewDocumentSW(System.Boolean)">
+            <summary>Създава нова графична област</summary>
+            <param name="thisGraphicArea">флаг за нова графична област или да се 
+            използва съществуващата</param>
+        </member>
+        <member name="M:SmartTools.Lib.PatternHandlerBase.DeafultName">
+            <summary>формира името на графичната област по подразбиране</summary>
+            <returns>наименование на графична област</returns>
+        </member>
+        <member name="M:SmartTools.Lib.PatternHandlerBase.IsEmptyDoc">
+            <summary>проверява активния документ дали е свододен</summary>
+            <returns>TRUE свободен активен докумен, FALSE не е свободен</returns>
+        </member>
+        <member name="M:SmartTools.Lib.PatternHandlerBase.EditDocumentSW(System.Boolean)">
+            <summary>редактира активен документ</summary>
+        </member>
+        <member name="M:SmartTools.Lib.PatternHandlerBase.Creating">
+            <summary>създава 3D модела</summary>
+            <returns>TRUE при нормално изграждане, FALSE при проблем</returns>
+        </member>
+        <member name="M:SmartTools.Lib.PatternHandlerBase.SetControls">
+            <summary>
+            установява стойностите на размерите на модела от въведените
+            в съответните контроли на swPMPage
+            </summary>
+        </member>
+        <member name="M:SmartTools.Lib.PatternHandlerBase.SetFileProperties">
+            <summary>
+            Съхранява характеристиките на модела в описанието му.
+            </summary>
+        </member>
+        <member name="M:SmartTools.Lib.PatternHandlerBase.CreateFolder">
+            <summary>Създава папка с построенията на модела</summary>
+        </member>
+        <member name="M:SmartTools.Lib.PatternHandlerBase.MaterialName">
+            <summary>връща наименованието на използвния материал в модела</summary>
+            <returns>наименование на материал</returns>
+        </member>
+        <member name="M:SmartTools.Lib.PatternHandlerBase.ChangeCertificateOrTest(System.Int32,System.Int32)">
+            <summary>обработва въвеждането на Сертификат или Тест</summary>
+            <param name="control">уникален номер на контролата</param>
+            <param name="selection">избран елемент в контролата</param>
+        </member>
+        <member name="M:SmartTools.Lib.PatternHandlerBase.ChangeStandardOrDiameter(System.Int32,System.Int32)">
+            <summary>
+            обработва въвеждането на Стандарт или диаметър
+            </summary>
+            <param name="control">уникален номер на контролата</param>
+            <param name="selection">избран елемент в контролата</param>
+        </member>
+        <member name="M:SmartTools.Lib.PatternHandlerBase.Relevance">
+            <summary>
+            проверява приложимостта на модела към съществуващата среда на SW
+            </summary>
+            <returns>TRUE модела е приложим, FALSE не може да се приложи</returns>
+        </member>
+        <member name="M:SmartTools.Lib.PatternHandlerBase.GetCoordinateSystem">
+            <summary>
+            поготвя за визуализация информацията за координатната система
+            </summary>
+        </member>
+        <member name="M:SmartTools.Lib.PatternHandlerBase.RadioButtonChek">
+            <summary>
+            активира се при избор на радио бутон
+            </summary>
+        </member>
+        <member name="M:SmartTools.Lib.PatternHandlerBase.DiameterOrThicknessChange">
+            <summary>
+            активира се при промяна на диаметъра и/или дебелината на стената
+            </summary>
+        </member>
+        <member name="M:SmartTools.Lib.PatternHandlerBase.OnClose(System.Int32)">
+            <summary>изпълнява се при затваряне на  swPMPage</summary>
+            <param name="Reason">избрам бутон при затваряне на swPMPage</param>
+        </member>
+        <member name="M:SmartTools.Lib.PatternHandlerBase.OnPreview">
+            <summary>Предварителен преглед на модела</summary>
+            <returns>TRUE при нормално изпълнение на пгегледа</returns>
+        </member>
+        <member name="T:SmartTools.Lib.Properties">
+            <summary>
+            Клас за работа с описанията на модела
+            </summary>
+        </member>
+        <member name="F:SmartTools.Lib.Properties.CUSTOM_TAB">
+            <summary>наименование на Custom раздела във file Properties</summary>
+        </member>
+        <member name="F:SmartTools.Lib.Properties.CONFIGURATION_SPECIFIC">
+            <summary>наименование на конфигурацията на модела</summary>
+        </member>
+        <member name="F:SmartTools.Lib.Properties.NAME_ANGLE">
+            <summary>ключ към ъгъл използван в модела</summary>
+        </member>
+        <member name="F:SmartTools.Lib.Properties.NAME_CERTIFICATE">
+            <summary>ключ към сертификата на модела</summary>
+        </member>
+        <member name="F:SmartTools.Lib.Properties.NAME_CLOCKWISE">
+            <summary>ключ към посока на нарастване на ъгъла в координатната система</summary>
+        </member>
+        <member name="F:SmartTools.Lib.Properties.NAME_CREATOR">
+            <summary>ключ към създателя на модела</summary>
+        </member>
+        <member name="F:SmartTools.Lib.Properties.NAME_DESCRIPTION">
+            <summary>ключ към описанието на модела</summary>
+        </member>
+        <member name="F:SmartTools.Lib.Properties.NAME_DIAMETER">
+            <summary>ключ към диаметъра на модела</summary>
+        </member>
+        <member name="F:SmartTools.Lib.Properties.NAME_DRAWING_NUMBER">
+            <summary>ключ към черточния номер на модела</summary>
+        </member>
+        <member name="F:SmartTools.Lib.Properties.NAME_HEIGHT">
+            <summary>ключ към височината на модела</summary>
+        </member>
+        <member name="F:SmartTools.Lib.Properties.NAME_INNER_DIAMETER">
+            <summary>ключ към флаг посочващ че диаметъра е вътрешен</summary>
+        </member>
+        <member name="F:SmartTools.Lib.Properties.NAME_LENGTH">
+            <summary>ключ към дължината на модела</summary>
+        </member>
+        <member name="F:SmartTools.Lib.Properties.NAME_MATERIAL">
+            <summary>ключ към катериала на модела</summary>
+        </member>
+        <member name="F:SmartTools.Lib.Properties.NAME_NODRAWING">
+            <summary>ключ към флага указващ наличие на чертеж към модела</summary>
+        </member>
+        <member name="F:SmartTools.Lib.Properties.NAME_NOTE">
+            <summary>ключ към забележка на модела</summary>
+        </member>
+        <member name="F:SmartTools.Lib.Properties.NAME_PATTERN">
+            <summary>ключ към типа на модела</summary>
+        </member>
+        <member name="F:SmartTools.Lib.Properties.NAME_POSITION0">
+            <summary>позиция на 0 градуса в координатната система</summary>
+        </member>
+        <member name="F:SmartTools.Lib.Properties.NAME_QUALITY">
+            <summary>ключ към качеството на модела</summary>
+        </member>
+        <member name="F:SmartTools.Lib.Properties.NAME_STANDARD">
+            <summary>ключ към стандарт на модел</summary>
+        </member>
+        <member name="F:SmartTools.Lib.Properties.NAME_TEST">
+            <summary>ключ към теста на модела</summary>
+        </member>
+        <member name="F:SmartTools.Lib.Properties.NAME_THICKNESS">
+            <summary>ключ към дебелината на модела, "Depth Value" е остарял ключ</summary>
+        </member>
+        <member name="F:SmartTools.Lib.Properties.NAME_WELDINGSEAM">
+            <summary>ключ към ъгъл на заваръчен шев</summary>
+        </member>
+        <member name="F:SmartTools.Lib.Properties.NAME_WIDTH">
+            <summary>ключ към ширината на модела</summary>
+        </member>
+        <member name="F:SmartTools.Lib.Properties.NAME_HOLE_NUMBER">
+            <summary>ключ към брояча на отворите</summary>
+        </member>
+        <member name="F:SmartTools.Lib.Properties.NAME_OUTHOLE_NUMBER">
+            <summary>ключ към брояча на избушени навън отворите</summary>
+        </member>
+        <member name="F:SmartTools.Lib.Properties.NAME_INHOLE_NUMBER">
+            <summary>ключ към брояча на избушени навътре отворите</summary>
+        </member>
+        <member name="F:SmartTools.Lib.Properties.NAME_ANGLE_INCLINATION">
+            <summary>ключ към ъгъла на наклона</summary>
+        </member>
+        <member name="F:SmartTools.Lib.Properties.NAME_BEND_RADIUS">
+            <summary>ключ към радиуса на берта</summary>
+        </member>
+        <member name="F:SmartTools.Lib.Properties.NAME_DISTANCE">
+            <summary>ключ към отстояние от центъра</summary>
+        </member>
+        <member name="F:SmartTools.Lib.Properties.MAX_VALUE">
+            <summary>максимално допустина стойност на разнер</summary>
+        </member>
+        <member name="F:SmartTools.Lib.Properties.iCPManager">
+            <summary>
+            обект за достъп до информацията с характеристиките на модела
+            </summary>
+        </member>
+        <member name="M:SmartTools.Lib.Properties.#ctor(SolidWorks.Interop.sldworks.IModelDoc2,System.String)">
+            <summary>
+            създава обекта за обработка на характеристиките на модела
+            </summary>
+            <param name="model">обект за достъп до модела</param>
+            <param name="configName">наименование на конфигурацията</param>
+        </member>
+        <member name="M:SmartTools.Lib.Properties.ChangeConfiguration(SolidWorks.Interop.sldworks.IModelDoc2,System.String)">
+            <summary>
+            получава достъп до конфигурация <paramref name="configName"/> за
+            модела <paramref name="model"/>
+            </summary>
+            <param name="model">обект за достъп до модела</param>
+            <param name="configName">наименование на конфигурацията</param>
+        </member>
+        <member name="M:SmartTools.Lib.Properties.Header(SmartTools.Prime.Patterns_e,System.String)">
+            <summary>
+            съхранява общата информация за модела
+            </summary>
+            <param name="pattern">тип на модела</param>
+            <param name="creator">създател на модела</param>
+        </member>
+        <member name="M:SmartTools.Lib.Properties.Characteristics(System.String,System.String,System.String)">
+            <summary>
+            съхранява информация за характеристиките на модела
+            </summary>
+            <param name="material">материал</param>
+            <param name="standard">стандарт</param>
+            <param name="quality">качество</param>
+        </member>
+        <member name="M:SmartTools.Lib.Properties.Complements(System.String,System.String,System.Boolean)">
+            <summary>
+            съхранява допълнителната информация към модела
+            </summary>
+            <param name="certificate">сертификат</param>
+            <param name="test">тест</param>
+            <param name="noDrawing">флаг за наличие на чертеж</param>
+        </member>
+        <member name="M:SmartTools.Lib.Properties.Dimension(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double)">
+            <summary>съхранява информацията за габаритите на модела</summary>
+            <param name="diameter">диаметър</param>
+            <param name="thickness">дебелина</param>
+            <param name="width">ширина</param>
+            <param name="length">дължина</param>
+            <param name="height">височина</param>
+            <param name="weldingSeam">ъгъл на заваръчния шев</param>
+        </member>
+        <member name="M:SmartTools.Lib.Properties.CoordinateSystem(System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean)">
+            <summary>
+            съхранява информация за координатната система
+            </summary>
+            <param name="clockwise">посока на нарастване на ъгъла</param>
+            <param name="nort">позиция север 0</param>
+            <param name="east">позиция изток 0</param>
+            <param name="sout">позиция юг 0</param>
+            <param name="west">позиция запад 0</param>
+        </member>
+        <member name="M:SmartTools.Lib.Properties.Get(System.String)">
+            <summary>
+            връща съдържанието на описание с наименование <paramref name="name"/>
+            </summary>
+            <param name="name">наименование на описанието</param>
+            <returns>съдържание на описанието, NULL ако не съществува описание</returns>
+        </member>
+        <member name="M:SmartTools.Lib.Properties.Set(System.String,System.String)">
+            <summary>
+            съхранява съдържанието на описание <paramref name="data"/> с
+            наименование <paramref name="name"/>
+            </summary>
+            <param name="name">наименование на описанието</param>
+            <param name="data">съдържание на описанието</param>
+        </member>
+        <member name="M:SmartTools.Lib.Properties.ToDouble(System.String)">
+            <summary>връща стрин като реално число</summary>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartTools.Lib.Properties.Creator">
+            <summary>връща съдържанието за създателя на модела</summary>
+            <returns>създател на модела</returns>
+        </member>
+        <member name="M:SmartTools.Lib.Properties.Creator(System.String)">
+            <summary>съхранява създателя на модела</summary>
+            <param name="data">създател на модела</param>
+        </member>
+        <member name="M:SmartTools.Lib.Properties.Pattern">
+            <summary>връща типа на модела</summary>
+            <returns>тип на модела</returns>
+        </member>
+        <member name="M:SmartTools.Lib.Properties.Pattern(SmartTools.Prime.Patterns_e)">
+            <summary>съхранява типа на  модела</summary>
+            <param name="data">тип на модела</param>
+        </member>
+        <member name="M:SmartTools.Lib.Properties.Material">
+            <summary>връща материала на модела</summary>
+            <returns>материал на модела</returns>
+        </member>
+        <member name="M:SmartTools.Lib.Properties.Material(System.String)">
+            <summary>съхранява мтериала на модела</summary>
+            <param name="data">материал на модела</param>
+        </member>
+        <member name="M:SmartTools.Lib.Properties.Certificate">
+            <summary>връща сертификата на модела</summary>
+            <returns>сертифицат на модела</returns>
+        </member>
+        <member name="M:SmartTools.Lib.Properties.Certificate(System.String)">
+            <summary>съхранява сертификата на модела</summary>
+            <param name="data">сертификат на модела</param>
+        </member>
+        <member name="M:SmartTools.Lib.Properties.Test">
+            <summary>връща теста на модела</summary>
+            <returns>тест на модела</returns>
+        </member>
+        <member name="M:SmartTools.Lib.Properties.Test(System.String)">
+            <summary>съхранява теста на модела</summary>
+            <param name="data">тест на модела</param>
+        </member>
+        <member name="M:SmartTools.Lib.Properties.NoDrawing">
+            <summary>връща флага указващ наличие на чертеж към модела</summary>
+            <returns>флаг за наличие на чертеж към модела</returns>
+        </member>
+        <member name="M:SmartTools.Lib.Properties.NoDrawing(System.Boolean)">
+            <summary>съхранява флага указващ наличие на чертеж към модела</summary>
+            <param name="data">флаг за наличие на чертеж ъм модела</param>
+        </member>
+        <member name="M:SmartTools.Lib.Properties.DrawingNumber">
+            <summary>връща чертожния номер на модела</summary>
+            <returns>чертожен номер</returns>
+        </member>
+        <member name="M:SmartTools.Lib.Properties.DrawingNumber(System.String)">
+            <summary>съхранява чертожния номер на модела</summary>
+            <param name="data">чертожен номер</param>
+        </member>
+        <member name="M:SmartTools.Lib.Properties.Thickness">
+            <summary>връща дебелината на модела</summary>
+            <returns>дебелина на модела</returns>
+        </member>
+        <member name="M:SmartTools.Lib.Properties.Thickness(System.Double)">
+            <summary>съхранява дебелината на модела</summary>
+            <param name="data">дебелина на модела</param>
+        </member>
+        <member name="M:SmartTools.Lib.Properties.Width">
+            <summary>връща ширината на модела</summary>
+            <returns>ширина на модела</returns>
+        </member>
+        <member name="M:SmartTools.Lib.Properties.Width(System.Double)">
+            <summary>съхранява ширината на модела</summary>
+            <param name="data">ширина на модела</param>
+        </member>
+        <member name="M:SmartTools.Lib.Properties.Length">
+            <summary>връща дължината на модела</summary>
+            <returns>дължина на модела</returns>
+        </member>
+        <member name="M:SmartTools.Lib.Properties.Length(System.Double)">
+            <summary>съхранява дължината на модела</summary>
+            <param name="data">дължина на модела</param>
+        </member>
+        <member name="M:SmartTools.Lib.Properties.Description">
+            <summary>връща описанието на модела</summary>
+            <returns>описание</returns>
+        </member>
+        <member name="M:SmartTools.Lib.Properties.Description(System.String)">
+            <summary>съхранява описанието на модела</summary>
+            <param name="data">описание</param>
+        </member>
+        <member name="M:SmartTools.Lib.Properties.Note">
+            <summary>връща забележката към модела</summary>
+            <returns>забележка</returns>
+        </member>
+        <member name="M:SmartTools.Lib.Properties.Note(System.String)">
+            <summary>съхранява забележка към модела</summary>
+            <param name="data">забележка</param>
+        </member>
+        <member name="M:SmartTools.Lib.Properties.Diameter(System.String)">
+            <summary>връща диаметъра на модела</summary>
+            <param name="noDiameter">номер на диаметър, използва се при отворите</param>
+            <returns>диаметър</returns>
+        </member>
+        <member name="M:SmartTools.Lib.Properties.Diameter(System.Double,System.String)">
+            <summary>съхранява диаметра на модела</summary>
+            <param name="noDiameter">номер на диаметър, използва се при отворите</param>
+            <param name="data">диаметър</param>
+        </member>
+        <member name="M:SmartTools.Lib.Properties.Standard">
+            <summary>връща стандарта на модела</summary>
+            <returns>стандарт</returns>
+        </member>
+        <member name="M:SmartTools.Lib.Properties.Standard(System.String)">
+            <summary>съхранява стандарта на модела</summary>
+            <param name="data">стандарт</param>
+        </member>
+        <member name="M:SmartTools.Lib.Properties.Quality">
+            <summary>връща качеството на модела</summary>
+            <returns>качество</returns>
+        </member>
+        <member name="M:SmartTools.Lib.Properties.Quality(System.String)">
+            <summary>съхранява качеството на модела</summary>
+            <param name="data">качество</param>
+        </member>
+        <member name="M:SmartTools.Lib.Properties.WeldingSeam">
+            <summary>връща ъгъла на заваръчния шев на модела</summary>
+            <returns>ъгъла на заваръчния шев</returns>
+        </member>
+        <member name="M:SmartTools.Lib.Properties.WeldingSeam(System.Double)">
+            <summary>съхранява ъгъла на заваръчния шев на модела</summary>
+            <param name="data">ъгъла на заваръчния шев</param>
+        </member>
+        <member name="M:SmartTools.Lib.Properties.Clockwise">
+            <summary>
+            връща посоката на нарастване на ъгъла в координатната система
+            </summary>
+            <returns>посока на нарастване на ъгъла</returns>
+        </member>
+        <member name="M:SmartTools.Lib.Properties.Clockwise(System.Boolean)">
+            <summary>
+            съхранява посоката на нарастване на ъгъла в координатната система
+            </summary>
+            <param name="data">посока на нарастване на ъгъла</param>
+        </member>
+        <member name="M:SmartTools.Lib.Properties.Height(System.String)">
+            <summary>връща височината на модела</summary>
+            /// <param name="noHeight">номер на височината, използва се при отворите</param>
+            <returns>височина</returns>
+        </member>
+        <member name="M:SmartTools.Lib.Properties.Height(System.Double,System.String)">
+            <summary>съхранява височината на модела</summary>
+            <param name="noHeight">номер на височината, използва се при отворите</param>
+            <param name="data">височина</param>
+        </member>
+        <member name="M:SmartTools.Lib.Properties.Distance(System.String)">
+            <summary>връща отстоянието от центъра</summary>
+            /// <param name="noHeight">номер на отстоянието, използва се при отворите</param>
+            <returns>височина</returns>
+        </member>
+        <member name="M:SmartTools.Lib.Properties.Distance(System.Double,System.String)">
+            <summary>съхранява отстоянието до центъра</summary>
+            <param name="noHeight">номер на височината, използва се при отворите</param>
+            <param name="data">отстоянието от центъра</param>
+        </member>
+        <member name="M:SmartTools.Lib.Properties.Position0">
+            <summary>
+            връща 0 градуса на координатната система
+            </summary>
+            <returns>позиция на 0 градуса на координатната система</returns>
+        </member>
+        <member name="M:SmartTools.Lib.Properties.Position0(System.Boolean,System.Boolean,System.Boolean,System.Boolean)">
+            <summary>
+            съхранява 0 градуса на координатната система
+            </summary>
+        </member>
+        <member name="M:SmartTools.Lib.Properties.InnerDiameter">
+            <summary>
+            връща флага за типа на диаметъра
+            </summary>
+            <returns>тип на диаметъра, вътрешен/външен</returns>
+        </member>
+        <member name="M:SmartTools.Lib.Properties.InnerDiameter(System.Boolean)">
+            <summary>съхранява типа на диаметъра</summary>
+            <param name="data">тип на диаметъра, вътрешен/външен</param>
+        </member>
+        <member name="M:SmartTools.Lib.Properties.HoleNumber">
+            <summary>връща номера на последния отвор</summary>
+            <returns>номер на отвора</returns>
+        </member>
+        <member name="M:SmartTools.Lib.Properties.HoleNumber(System.Int32)">
+            <summary>съхранява номера на последния отвор</summary>
+            <param name="hole">номер на отвора</param>
+        </member>
+        <member name="M:SmartTools.Lib.Properties.Angle(System.String)">
+            <summary>връща ъгъла използван в модела</summary>
+            <param name="noAngle">номер на ъгъл, използва се при отворите</param>
+            <returns>ъгъл използван в модела</returns>
+        </member>
+        <member name="M:SmartTools.Lib.Properties.Angle(System.Double,System.String)">
+            <summary>съхранява ъгъла на заваръчния шев на модела</summary>
+            <param name="noAngle">номер на ъгъл, използва се при отворите</param>
+            <param name="data">ъгъла на заваръчния шев</param>
+        </member>
+        <member name="M:SmartTools.Lib.Properties.OutHoleNumber">
+            <summary>връща номера на последния избушен навън отвор</summary>
+            <returns>номер на отвора</returns>
+        </member>
+        <member name="M:SmartTools.Lib.Properties.OutHoleNumber(System.Int32)">
+            <summary>съхранява номера на последния избушен навън отвор</summary>
+            <param name="hole">номер на отвора</param>
+        </member>
+        <member name="M:SmartTools.Lib.Properties.InHoleNumber">
+            <summary>връща номера на последния избушен навътре отвор</summary>
+            <returns>номер на отвора</returns>
+        </member>
+        <member name="M:SmartTools.Lib.Properties.InHoleNumber(System.Int32)">
+            <summary>съхранява номера на последния избушен навътре отвор</summary>
+            <param name="hole">номер на отвора</param>
+        </member>
+        <member name="M:SmartTools.Lib.Properties.AngleInclination">
+            <summary>връща ъгъла на наклона на модела</summary>
+            <returns>ъгъл на наклона на модела</returns>
+        </member>
+        <member name="M:SmartTools.Lib.Properties.AngleInclination(System.Double)">
+            <summary>съхранява ъгъла на наклона на модела</summary>
+            <param name="data">дебелина на модела</param>
+        </member>
+        <member name="M:SmartTools.Lib.Properties.BendRadius">
+            <summary>връща радиуса на берта на модела</summary>
+            <returns>радиус на берта на модела</returns>
+        </member>
+        <member name="M:SmartTools.Lib.Properties.BendRadius(System.Double)">
+            <summary>съхранява радиуса на берта на модела</summary>
+            <param name="data">радиус на берта на модела</param>
+        </member>
+        <member name="T:SmartTools.Patterns.Axis">
+            <summary>Създава модел ОС</summary>
+        </member>
+        <member name="P:SmartTools.Patterns.Axis.swDocumentType">
+            <summary>тип на модела</summary>
+        </member>
+        <member name="P:SmartTools.Patterns.Axis.modelType">
+            <summary>тип на модела определен от приложението</summary>
+        </member>
+        <member name="P:SmartTools.Patterns.Axis.nameSizeDiameter">
+            <summary>наименование на размера за диаметър</summary>
+        </member>
+        <member name="P:SmartTools.Patterns.Axis.nameSizeLength">
+            <summary>наименование на размер за дължина на оста</summary>
+        </member>
+        <member name="P:SmartTools.Patterns.Axis.nameSketch">
+            <summary>наименование на скицата</summary>
+        </member>
+        <member name="P:SmartTools.Patterns.Axis.nameExtrude">
+            <summary>наименование на 3D построението</summary>
+        </member>
+        <member name="M:SmartTools.Patterns.Axis.AddControlsOnPMPage">
+            <summary>добавя контроли в swPMPage</summary>
+        </member>
+        <member name="M:SmartTools.Patterns.Axis.Creating">
+            <summary>изгражда 3D модела</summary>
+            <returns>TRUE модела е изграден, FALSE проблем с параметрита</returns>
+        </member>
+        <member name="M:SmartTools.Patterns.Axis.SetFileProperties">
+            <summary>
+            съхранява характеристиките на модела във Филе Пропертиес
+            </summary>
+        </member>
+        <member name="M:SmartTools.Patterns.Axis.CreateFolder">
+            <summary>
+            създава папка с постоенията за модела
+            </summary>
+        </member>
+        <member name="M:SmartTools.Patterns.Axis.EditDocumentSW(System.Boolean)">
+            <summary>
+            подготвя характеристиките на модела за редактиране
+            </summary>
+        </member>
+        <member name="M:SmartTools.Patterns.Axis.MaterialName">
+            <summary>
+            връща наименованието на избрания материал
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SmartTools.Patterns.Axis.SetControls">
+            <summary>
+            установява стойностите на размерите от въведениет
+            </summary>
+        </member>
+        <member name="M:SmartTools.Patterns.Axis.Relevance">
+            <summary>
+            проверява приложимостта на модела към съществуващата среда на SW
+            </summary>
+            <returns>TRUE модела е приложим, FALSE не може да се приложи</returns>
+        </member>
+        <member name="T:SmartTools.Patterns.Bottom">
+            <summary>Създава модела ДЪНО</summary>
+        </member>
+        <member name="M:SmartTools.Patterns.Bottom.CreateSurface(System.Double,System.Boolean,System.String,System.String)">
+            <summary>създава повърхност около модела</summary>
+            <data>2019-04-09</data>
+            <param name="offset">отстояние от стената</param>
+            <param name="location">местоположение на повърхнината, TRUE от външната страна, FALSE от вътрешната страна</param>
+            <param name="nameSurfaceBody">наименование на повърхнината</param>
+            <param name="nameSurfaceSketch">хаименование на скицата</param>
+        </member>
+        <member name="P:SmartTools.Patterns.Bottom.swDocumentType">
+            <summary>тип на модела в SW</summary>
+        </member>
+        <member name="P:SmartTools.Patterns.Bottom.modelType">
+            <summary>тип на модела определен от приложението</summary>
+        </member>
+        <member name="P:SmartTools.Patterns.Bottom.defDiameter">
+            <summary>стойност по подразбиране за диаметър, в метри</summary>
+        </member>
+        <member name="P:SmartTools.Patterns.Bottom.defAngleIinclination">
+            <summary>стойност по подразбиране за ъгъла на наклона, в градуси</summary>
+        </member>
+        <member name="P:SmartTools.Patterns.Bottom.defThickness">
+            <summary>стойност по подразбиране за дебелината на стената, в метри</summary>
+        </member>
+        <member name="P:SmartTools.Patterns.Bottom.defBendRadius">
+            <summary>стойност по подразбиране за радиуса на бертване, в метри</summary>
+        </member>
+        <member name="P:SmartTools.Patterns.Bottom.defAngle">
+            <summary>стйност по подразбиране за ъгъла на заваръчния шев, в радиани</summary>
+        </member>
+        <member name="F:SmartTools.Patterns.Bottom.changeCS">
+            <summary>флаг за промяна на координатната система</summary>
+        </member>
+        <member name="F:SmartTools.Patterns.Bottom.changeDT">
+            <summary>флаг за промяна на диаметъра и/или дебелината</summary>
+        </member>
+        <member name="M:SmartTools.Patterns.Bottom.AddControlsOnPMPage">
+            <summary>добавя контроли в swPMPage</summary>
+        </member>
+        <member name="M:SmartTools.Patterns.Bottom.Creating">
+            <summary>изгражда 3D модела</summary>
+            <returns>TRUE моделът е изграден, FALSE проблем с параметрите</returns>
+        </member>
+        <member name="M:SmartTools.Patterns.Bottom.SetControls">
+            <summary>установява стойностите на размерите от въведените</summary>
+        </member>
+        <member name="M:SmartTools.Patterns.Bottom.SetFileProperties">
+            <summary>
+            съхранява характеристиките на модела във File Properties
+            </summary>
+        </member>
+        <member name="M:SmartTools.Patterns.Bottom.CreateFolder">
+            <summary>Създава папка на построенията</summary>
+        </member>
+        <member name="M:SmartTools.Patterns.Bottom.Relevance">
+            <summary>
+            проверява приложимостта на модела към съществуващата среда на SW
+            </summary>
+            <returns>TRUE модела е приложим, FALSE не може да се приложи</returns>
+        </member>
+        <member name="M:SmartTools.Patterns.Bottom.MaterialName">
+            <returns>избран материал</returns>
+        </member>
+        <member name="M:SmartTools.Patterns.Bottom.EditDocumentSW(System.Boolean)">
+            <summary>подготвя характеристиките на модела за редактиране</summary>
+        </member>
+        <member name="M:SmartTools.Patterns.Bottom.RadioButtonChek">
+            <summary>установява флаг за промяна на координатната система</summary>
+        </member>
+        <member name="M:SmartTools.Patterns.Bottom.DiameterOrThicknessChange">
+            <summary>установява флаг за промяна на диаметър и/или дебелина</summary>
+        </member>
+        <member name="T:SmartTools.Patterns.Cover">
+            <summary>Създава модела КАПАК</summary>
+        </member>
+        <member name="M:SmartTools.Patterns.Cover.Execute">
+            <summary>Изпълнява модела.</summary>
+            <date>2019-04-10</date>
+        </member>
+        <member name="M:SmartTools.Patterns.Cover.Rebuild">
+            <summary>Изгражда/Възстановява модела</summary>
+        </member>
+        <member name="P:SmartTools.Patterns.Cover.swDocumentType">
+            <summary>тип на модела определен от SW</summary>
+            <date>2019-04-08</date>
+        </member>
+        <member name="P:SmartTools.Patterns.Cover.modelType">
+            <summary>тип на модела определен от приложението</summary>
+            <date>2019-04-08</date>
+        </member>
+        <member name="P:SmartTools.Patterns.Cover.defDiameter">
+            <summary>стойност по подразбиране за диаметър, в метри</summary>
+            <date>2019-04-08</date>
+        </member>
+        <member name="P:SmartTools.Patterns.Cover.defAngleIinclination">
+            <summary>стойност по подразбиране за ъгъла на наклона, в градуси</summary>
+            <date>2019-04-08</date>
+        </member>
+        <member name="P:SmartTools.Patterns.Cover.defThickness">
+            <summary>стойност по подразбиране за дебелината на стената, в метри</summary>
+            <date>2019-04-08</date>
+        </member>
+        <member name="P:SmartTools.Patterns.Cover.defBendRadius">
+            <summary>стойност по подразбиране за радиуса на бертване, в метри</summary>
+            <date>2019-04-08</date>
+        </member>
+        <member name="P:SmartTools.Patterns.Cover.defAngle">
+            <summary>стйност по подразбиране за ъгъла на заваръчния шев, в радиани</summary>
+            <date>2019-04-08</date>
+        </member>
+        <member name="P:SmartTools.Patterns.Cover.defClockwise">
+            <summary>стойност по подразбиране за посоката на нарастване на ъгълав координатната система</summary>
+            <date>2019-04-10</date>
+        </member>
+        <member name="P:SmartTools.Patterns.Cover.defPosition0">
+            <summary>стойност по подразбиране за позицията на 0 градуса в координатната система</summary>
+            <date>2019-04-10</date>
+        </member>
+        <member name="M:SmartTools.Patterns.Cover.Relevance">
+            <summary>проверява приложимостта на модела към съществуващата среда на SW</summary>
+            <date>2019-04-08</date>
+            <returns>TRUE модела е приложим, FALSE не може да се приложи</returns>
+        </member>
+        <member name="M:SmartTools.Patterns.Cover.AddControlsOnPMPage">
+            <summary>добавя контроли в swPMPage за въвеждане на параметрите на КАПАК </summary>
+            <date>2019-04-08</date>
+        </member>
+        <member name="M:SmartTools.Patterns.Cover.CreateDocSW">
+            <summary>изгражда 3D модел на КАПАК</summary>
+            <returns></returns>
+        </member>
+        <member name="M:SmartTools.Patterns.Cover.ChangesDimensions">
+            <summary>
+            променя стойностите на размерите на модела, получени от контролите в swPMPage
+            </summary>
+            <date>2019-04-10</date>
+        </member>
+        <member name="M:SmartTools.Patterns.Cover.CreateSurface(System.Double,System.Boolean,System.String,System.String)">
+            <summary>създава повърхност около модела</summary>
+            <data>2019-04-09</data>
+            <param name="offset">отстояние от стената</param>
+            <param name="location">местоположение на повърхнината, TRUE от външната страна, FALSE от вътрешната страна</param>
+            <param name="nameSurfaceBody">наименование на повърхнината</param>
+            <param name="nameSurfaceSketch">хаименование на скицата</param>
+        </member>
+        <member name="F:SmartTools.Patterns.Cover.changeCS">
+            <summary>флаг за промяна на координатната система</summary>
+        </member>
+        <member name="F:SmartTools.Patterns.Cover.changeDT">
+            <summary>флаг за промяна на диаметъра и/или дебелината</summary>
+        </member>
+        <member name="M:SmartTools.Patterns.Cover.Creating">
+            <summary>изгражда 3D модела на КАПАК</summary>
+            <returns>TRUE моделът е изграден, FALSE проблем с параметрите</returns>
+        </member>
+        <member name="M:SmartTools.Patterns.Cover.SetControls">
+            <summary>установява стойностите на размерите от въведените</summary>
+        </member>
+        <member name="M:SmartTools.Patterns.Cover.SetFileProperties">
+            <summary>съхранява характеристиките на модела във File Properties</summary>
+        </member>
+        <member name="M:SmartTools.Patterns.Cover.CreateFolder">
+            <summary>Създава папка на построенията</summary>
+        </member>
+        <member name="M:SmartTools.Patterns.Cover.MaterialName">
+            <summary>връща наименованието на избрания материал</summary>
+            <returns>избран материал</returns>
+        </member>
+        <member name="M:SmartTools.Patterns.Cover.EditDocumentSW(System.Boolean)">
+            <summary>подготвя характеристиките на модела за редактиране</summary>
+        </member>
+        <member name="M:SmartTools.Patterns.Cover.RadioButtonChek">
+            <summary>установява флаг за промяна на координатната система</summary>
+        </member>
+        <member name="M:SmartTools.Patterns.Cover.DiameterOrThicknessChange">
+            <summary>установява флаг за промяна на диаметър и/или дебелина</summary>
+        </member>
+        <member name="M:SmartTools.Patterns.EditPattern.Execute">
+            <summary>Изпълнява модела.</summary>
+            <date>2019-04-10</date>
+        </member>
+        <member name="P:SmartTools.Patterns.EditPattern.swDocumentType">
+            <summary>тип на модела определен от SW</summary>
+            <date>2019-04-11</date>
+        </member>
+        <member name="P:SmartTools.Patterns.EditPattern.modelType">
+            <summary>тип на модела определен от приложението</summary>
+            <date>2019-04-11</date>
+        </member>
+        <member name="M:SmartTools.Patterns.EditPattern.Relevance">
+            <summary>проверка за приложимост на инструмента</summary>
+            <returns>True инструментът се изпълнява, False не се изпълнява</returns>
+        </member>
+        <member name="T:SmartTools.Patterns.InHole">
+            <summary>създава модел на избушен отвор навътре</summary>
+        </member>
+        <member name="P:SmartTools.Patterns.InHole.swDocumentType">
+            <summary>тип на модела в среда на SW</summary>
+        </member>
+        <member name="P:SmartTools.Patterns.InHole.modelType">
+            <summary>тип на модела определен от приложението</summary>
+        </member>
+        <member name="P:SmartTools.Patterns.InHole.curAngle">
+            <summary>текуща стойност на ъгловото отместване</summary>
+        </member>
+        <member name="P:SmartTools.Patterns.InHole.thinBody">
+            <summary>дебелина на стената на тялото върху което се изгражда отвора</summary>
+        </member>
+        <member name="P:SmartTools.Patterns.InHole.diamBody">
+            <summary>диаметър на тялото върху което се изгражда отвора</summary>
+        </member>
+        <member name="P:SmartTools.Patterns.InHole.heightBody">
+            <summary>височина на тялото вурху което се изгражда отвора</summary>
+        </member>
+        <member name="P:SmartTools.Patterns.InHole.defDiameter">
+            <summary>стойност по подразбиране за диаметър, в метри</summary>
+        </member>
+        <member name="P:SmartTools.Patterns.InHole.defHeight">
+            <summary>стойност по подразбиране за височина на отвора спрямо основата, в метри</summary>
+        </member>
+        <member name="P:SmartTools.Patterns.InHole.defAngularOffset">
+            <summary>стойност по подразбиране за ъгловото отместване спрямо координатната система на тялото, в радиани</summary>
+        </member>
+        <member name="P:SmartTools.Patterns.InHole.defDistance">
+            <summary>стойност по подразбиране за отстояниетоа на отвора от центъра</summary>
+        </member>
+        <member name="F:SmartTools.Patterns.InHole.pattern">
+            <summary>модел на обекта върху който се прилага инструмента</summary>
+        </member>
+        <member name="P:SmartTools.Patterns.InHole.nameDiamBody">
+            <summary>наименование на диаметъра на тялото върху което се изгражда отвора</summary>
+        </member>
+        <member name="P:SmartTools.Patterns.InHole.nameHoleExternal">
+            <summary>наименование на тялото оформящо външните размери на отвора</summary>
+        </member>
+        <member name="P:SmartTools.Patterns.InHole.nameHoleCut">
+            <summary>наименование на тялото премахващо материал от оста до вътрешната стена</summary>
+        </member>
+        <member name="P:SmartTools.Patterns.InHole.nameHoleEnd">
+            <summary>наименование на тялото премхващо материал от стената на тялото</summary>
+        </member>
+        <member name="M:SmartTools.Patterns.InHole.Relevance">
+            <summary>проверява приложимостта на модела към съществуващата среда на SW</summary>
+            <returns>TRUE модела е приложим, FALSE не е приложим</returns>
+        </member>
+        <member name="M:SmartTools.Patterns.InHole.AddControlsOnPMPage">
+            <summary>добавя контролите в swPMPage</summary>
+        </member>
+        <member name="M:SmartTools.Patterns.InHole.GetCoordinateSystem">
+            <summary>поготвя за визуализация информацията за координатната система</summary>
+        </member>
+        <member name="M:SmartTools.Patterns.InHole.Creating">
+            <summary>изгражда 3D модела</summary>
+            <returns>TRUE модела е изграден, FALSE проблем с параметрите</returns>
+        </member>
+        <member name="M:SmartTools.Patterns.InHole.SetFileProperties">
+            <summary>съхранява характеристиките на отвора във File Propertyes</summary>
+        </member>
+        <member name="M:SmartTools.Patterns.InHole.CreateFolder">
+            <summary>създава папка с постоенията</summary>
+        </member>
+        <member name="M:SmartTools.Patterns.InHole.SetControls">
+            <summary>установява стойностите на размерите от въведените</summary>
+        </member>
+        <member name="M:SmartTools.Patterns.InHole.CreateSurfaces">
+            <summary>създава повърхнини около тялото върху което ще се изгражда отвора</summary>
+        </member>
+        <member name="M:SmartTools.Patterns.InHole.CreateInternalSurface">
+            <summary>създава помощна повърхнина на отстояние 10mm от вътрешната стена на тялото</summary>
+        </member>
+        <member name="M:SmartTools.Patterns.InHole.CreateExternalSurface">
+            <summary>създава помощна повърхнина по външната стена на тялото</summary>
+        </member>
+        <member name="M:SmartTools.Patterns.InHole.CreateHole">
+            <summary>създава 3D модела на отвора</summary>
+        </member>
+        <member name="M:SmartTools.Patterns.InHole.CutExtrusion">
+            <summary>създава отвора с изтегляне на материал и след това с отнемане на материал</summary>
+        </member>
+        <member name="M:SmartTools.Patterns.InHole.EndHole">
+            <summary>довършване на отвора, като прмахва материала от тялото върху което се изгражда отвора</summary>
+        </member>
+        <member name="T:SmartTools.Patterns.Mantel">
+            <summary>Създава модела МАНТЕЛ</summary>
+        </member>
+        <member name="M:SmartTools.Patterns.Mantel.CreateSurface(System.Double,System.Boolean,System.String,System.String)">
+            <summary>създава повърхност около модела</summary>
+            <data>2019-04-09</data>
+            <param name="offset">отстояние от стената</param>
+            <param name="location">местоположение на повърхнината, TRUE от външната страна, FALSE от вътрешната страна</param>
+            <param name="nameSurfaceBody">наименование на повърхнината</param>
+            <param name="nameSurfaceSketch">хаименование на скицата</param>
+        </member>
+        <member name="P:SmartTools.Patterns.Mantel.swDocumentType">
+            <summary>тип на модела в SW</summary>
+        </member>
+        <member name="P:SmartTools.Patterns.Mantel.modelType">
+            <summary>тип на модела в приложението</summary>
+        </member>
+        <member name="P:SmartTools.Patterns.Mantel.defDiameter">
+            <summary>стойност по подразбиране за диаметър, в метри</summary>
+        </member>
+        <member name="P:SmartTools.Patterns.Mantel.defThickness">
+            <summary>стойност по подразбиране за дебелината на стената, в метри</summary>
+        </member>
+        <member name="P:SmartTools.Patterns.Mantel.defHeight">
+            <summary>стойност по подразбиране за височината, в метри</summary>
+        </member>
+        <member name="P:SmartTools.Patterns.Mantel.defAngle">
+            <summary>стйност по подразбиране за ъгъла на заваръчния шев, в радиани</summary>
+        </member>
+        <member name="F:SmartTools.Patterns.Mantel.changeCS">
+            <summary>флаг за промяна на координатната система</summary>
+        </member>
+        <member name="F:SmartTools.Patterns.Mantel.changeDT">
+            <summary>флаг за промяна на диаметъра и/или дебелината</summary>
+        </member>
+        <member name="M:SmartTools.Patterns.Mantel.AddControlsOnPMPage">
+            <summary>добавя контроли в swPMPage</summary>
+        </member>
+        <member name="M:SmartTools.Patterns.Mantel.EditDocumentSW(System.Boolean)">
+            <summary>подготвя характеристиките на модела за редактиране</summary>
+        </member>
+        <member name="M:SmartTools.Patterns.Mantel.Creating">
+            <summary>изгражда 3D модела</summary>
+            <returns>TRUE моделът е изграден, FALSE проблем с параметрите</returns>
+        </member>
+        <member name="M:SmartTools.Patterns.Mantel.CreatingBody">
+            <summary>създава тялото на мантела</summary>
+        </member>
+        <member name="M:SmartTools.Patterns.Mantel.SetControls">
+            <summary>установява стойностите на размерите от въведените</summary>
+        </member>
+        <member name="M:SmartTools.Patterns.Mantel.SetFileProperties">
+            <summary>
+            съхранява характеристиките на модела във File Properties
+            </summary>
+        </member>
+        <member name="M:SmartTools.Patterns.Mantel.CreateFolder">
+            <summary>Създава папка на построенията</summary>
+        </member>
+        <member name="M:SmartTools.Patterns.Mantel.Relevance">
+            <summary>
+            проверява приложимостта на модела към съществуващата среда на SW
+            </summary>
+            <returns>TRUE модела е приложим, FALSE не може да се приложи</returns>
+        </member>
+        <member name="M:SmartTools.Patterns.Mantel.MaterialName">
+            <summary>връща наименованието на избрания материал</summary>
+            <returns>избран материал</returns>
+        </member>
+        <member name="M:SmartTools.Patterns.Mantel.RadioButtonChek">
+            <summary>установява флаг за промяна на координатната система</summary>
+        </member>
+        <member name="M:SmartTools.Patterns.Mantel.DiameterOrThicknessChange">
+            <summary>установява флаг за промяна на диаметър и/или дебелина</summary>
+        </member>
+        <member name="T:SmartTools.Patterns.OutHole">
+            <summary>създава модел на избушен отвор навън</summary>
+        </member>
+        <member name="M:SmartTools.Patterns.OutHole.CreateSurfaces">
+            <summary>създава помощни повърхнини</summary>
+            <date>2019-04-09</date>
+        </member>
+        <member name="P:SmartTools.Patterns.OutHole.swDocumentType">
+            <summary>тип на модела в среда на SW</summary>
+        </member>
+        <member name="P:SmartTools.Patterns.OutHole.modelType">
+            <summary>тип на модела определен от приложението</summary>
+        </member>
+        <member name="P:SmartTools.Patterns.OutHole.curAngle">
+            <summary>текуща стойност на ъгловото отместване</summary>
+        </member>
+        <member name="P:SmartTools.Patterns.OutHole.thinBody">
+            <summary>дебелина на стената на тялото върху което се изгражда отвора</summary>
+        </member>
+        <member name="P:SmartTools.Patterns.OutHole.diamBody">
+            <summary>диаметър на тялото върху което се изгражда отвора</summary>
+        </member>
+        <member name="P:SmartTools.Patterns.OutHole.heightBody">
+            <summary>височина на тялото вурху което се изгражда отвора</summary>
+        </member>
+        <member name="P:SmartTools.Patterns.OutHole.defDiameter">
+            <summary>стойност по подразбиране за диаметър, в метри</summary>
+        </member>
+        <member name="P:SmartTools.Patterns.OutHole.defHeight">
+            <summary>стойност по подразбиране за височина на отвора спрямо основата, в метри</summary>
+        </member>
+        <member name="P:SmartTools.Patterns.OutHole.defAngularOffset">
+            <summary>стойност по подразбиране за ъгловото отместване спрямо координатната система на тялото, в радиани</summary>
+        </member>
+        <member name="P:SmartTools.Patterns.OutHole.defDistance">
+            <summary>стойност по подразбиране за разстоянието до центъра, в метри</summary>
+        </member>
+        <member name="F:SmartTools.Patterns.OutHole.pattern">
+            <summary>модел на обекта върху който се прилага инструмента</summary>
+        </member>
+        <member name="P:SmartTools.Patterns.OutHole.nameDiamBody">
+            <summary>наименование на диаметъра на тялото върху което се изгражда отвора</summary>
+        </member>
+        <member name="P:SmartTools.Patterns.OutHole.nameHoleExternal">
+            <summary>наименование на тялото оформящо външните размери на отвора</summary>
+        </member>
+        <member name="P:SmartTools.Patterns.OutHole.nameHoleCut">
+            <summary>наименование на тялото премахващо материал от оста до вътрешната стена</summary>
+        </member>
+        <member name="P:SmartTools.Patterns.OutHole.nameHoleEnd">
+            <summary>наименование на тялото премхващо материал от стената на тялото</summary>
+        </member>
+        <member name="M:SmartTools.Patterns.OutHole.Relevance">
+            <summary>проверява приложимостта на модела към съществуващата среда на SW</summary>
+            <returns>TRUE модела е приложим, FALSE не е приложим</returns>
+        </member>
+        <member name="M:SmartTools.Patterns.OutHole.AddControlsOnPMPage">
+            <summary>добавя контролите в swPMPage</summary>
+        </member>
+        <member name="M:SmartTools.Patterns.OutHole.GetCoordinateSystem">
+            <summary>поготвя за визуализация информацията за координатната система</summary>
+        </member>
+        <member name="M:SmartTools.Patterns.OutHole.Creating">
+            <summary>изгражда 3D модела</summary>
+            <returns>TRUE модела е изграден, FALSE проблем с параметрите</returns>
+        </member>
+        <member name="M:SmartTools.Patterns.OutHole.SetFileProperties">
+            <summary>съхранява характеристиките на отвора във File Propertyes</summary>
+        </member>
+        <member name="M:SmartTools.Patterns.OutHole.CreateFolder">
+            <summary>създава папка с постоенията</summary>
+        </member>
+        <member name="M:SmartTools.Patterns.OutHole.SetControls">
+            <summary>установява стойностите на размерите от въведените</summary>
+        </member>
+        <member name="M:SmartTools.Patterns.OutHole.CreateExternalSurface">
+            <summary>създава помощна повърхнина на разтояние 10mm от външната стена</summary>
+        </member>
+        <member name="M:SmartTools.Patterns.OutHole.CreateHole">
+            <summary>създава 3D модела на отвора</summary>
+        </member>
+        <member name="M:SmartTools.Patterns.OutHole.CreatingSurfaces">
+            <summary>създава повърхнини около тялото върху което ще се изгражда отвора</summary>
+        </member>
+        <member name="M:SmartTools.Patterns.OutHole.Sketching">
+            <summary>създава скицата за отвора</summary>
+        </member>
+        <member name="M:SmartTools.Patterns.OutHole.CutExtrusion">
+            <summary>създава отвора с изтегляне на материал и след това с отнемане на материал</summary>
+        </member>
+        <member name="M:SmartTools.Patterns.OutHole.EndHole">
+            <summary>довършване на отвора, като прмахва материала от тялото върху което се изгражда отвора</summary>
+        </member>
+        <member name="T:SmartTools.Patterns.Tube">
+            <summary>създава модел тръба</summary>
+        </member>
+        <member name="P:SmartTools.Patterns.Tube.swDocumentType">
+            <summary>тип на модела</summary>
+        </member>
+        <member name="P:SmartTools.Patterns.Tube.modelType">
+            <summary>тип на модела определен от приложението</summary>
+        </member>
+        <member name="P:SmartTools.Patterns.Tube.diameter">
+            <summary>връща стойноста на диаметъра в размер метри</summary>
+        </member>
+        <member name="P:SmartTools.Patterns.Tube.thickness">
+            <summary>връща стойноста на дебелината на стената в размер метри</summary>
+        </member>
+        <member name="P:SmartTools.Patterns.Tube.length">
+            <summary>връща стойноста на дължината в размер метри</summary>
+        </member>
+        <member name="P:SmartTools.Patterns.Tube.nameSizeDiameter">
+            <summary>наименование на размера за диаметър</summary>
+        </member>
+        <member name="P:SmartTools.Patterns.Tube.nameSizeLength">
+            <summary>наименование на размер за дължина на тръбата</summary>
+        </member>
+        <member name="P:SmartTools.Patterns.Tube.nameSizeThickness">
+            <summary>наименование на размер за дебелина на стената на тръбата</summary>
+        </member>
+        <member name="P:SmartTools.Patterns.Tube.nameSketch">
+            <summary>наименование на скицата</summary>
+        </member>
+        <member name="P:SmartTools.Patterns.Tube.nameExtrude">
+            <summary>наименование на 3D построението</summary>
+        </member>
+        <member name="M:SmartTools.Patterns.Tube.AddControlsOnPMPage">
+            <summary>добавя контроли в swPMPage</summary>
+        </member>
+        <member name="M:SmartTools.Patterns.Tube.ChangeStandardOrDiameter(System.Int32,System.Int32)">
+            <summary>
+            обработва ситуция при промяна избора на Стандарт или Диаметър
+            </summary>
+            <param name="control">тип на контролата</param>
+            <param name="selection">избран елемент</param>
+        </member>
+        <member name="M:SmartTools.Patterns.Tube.Creating">
+            <summary>изгражда 3D модела</summary>
+            <returns>TRUE - модела е изграден, FALSE - проблем с параметрите</returns>
+        </member>
+        <member name="M:SmartTools.Patterns.Tube.SetFileProperties">
+            <summary>
+            съхранява характеристиките на модела във File Properties
+            </summary>
+        </member>
+        <member name="M:SmartTools.Patterns.Tube.CreateFolder">
+            <summary>създава папка с постоенията за модела</summary>
+        </member>
+        <member name="M:SmartTools.Patterns.Tube.EditDocumentSW(System.Boolean)">
+            <summary>
+            подготвя характеристиките на модела за редактиране
+            </summary>
+        </member>
+        <member name="M:SmartTools.Patterns.Tube.MaterialName">
+            <summary>
+            връща наименованието на избрания материал
+            </summary>
+            <returns>наименование на материала</returns>
+        </member>
+        <member name="M:SmartTools.Patterns.Tube.SetControls">
+            <summary>
+            установява стойностите на размерите от въведените
+            </summary>
+        </member>
+        <member name="M:SmartTools.Patterns.Tube.Relevance">
+            <summary>
+            проверява приложимостта на модела към съществуващата среда на SW
+            </summary>
+            <returns>TRUE модела е приложим, FALSE не може да се приложи</returns>
+        </member>
+        <member name="T:SmartTools.Patterns.Hole">
+            <summary>създава модела на нормален ОТВОР</summary>
+        </member>
+        <member name="P:SmartTools.Patterns.Hole.swDocumentType">
+            <summary>тип на модела в среда на SW</summary>
+        </member>
+        <member name="P:SmartTools.Patterns.Hole.modelType">
+            <summary>тип намодела определен от приложението</summary>
+        </member>
+        <member name="P:SmartTools.Patterns.Hole.curAngle">
+            <summary>текуща стойност на ъгловото отместване</summary>
+        </member>
+        <member name="P:SmartTools.Patterns.Hole.defDiameter">
+            <summary>стойност по подразбиране за диаметър, в метри</summary>
+        </member>
+        <member name="P:SmartTools.Patterns.Hole.defHeight">
+            <summary>стойност по подразбиране за височина на отвора спрямо основата, в метри</summary>
+        </member>
+        <member name="P:SmartTools.Patterns.Hole.defDistance">
+            <summary>стойност по подразбиране за разстоянието до центъра, в метри</summary>
+        </member>
+        <member name="P:SmartTools.Patterns.Hole.defAngularOffset">
+            <summary>стойност по подразбиране за ъгловото отместване спрямо координатната система на тялото, в радиани</summary>
+        </member>
+        <member name="F:SmartTools.Patterns.Hole.pattern">
+            <summary>модел на обекта върху който се прилага инструмента</summary>
+        </member>
+        <member name="M:SmartTools.Patterns.Hole.Relevance">
+            <summary>проверява приложимостта на модела към съществуващата среда на SW</summary>
+            <returns>TRUE модела е приложим, FALSE не може да се приложи</returns>
+        </member>
+        <member name="M:SmartTools.Patterns.Hole.GetCoordinateSystem">
+            <summary>поготвя за визуализация информацията за координатната система</summary>
+        </member>
+        <member name="M:SmartTools.Patterns.Hole.AddControlsOnPMPage">
+            <summary>добавя контроли в swPMPage</summary>
+        </member>
+        <member name="M:SmartTools.Patterns.Hole.Creating">
+            <summary>изгражда 3D модела</summary>
+            <returns>TRUE модела е изграден, FALSE проблем с параметрите</returns>
+        </member>
+        <member name="M:SmartTools.Patterns.Hole.CreateHole">
+            <summary>създава 3D модела на отвора</summary>
+        </member>
+        <member name="M:SmartTools.Patterns.Hole.SketchingVertical">
+            <summary>създава скицата за отвора във верикала</summary>
+        </member>
+        <member name="M:SmartTools.Patterns.Hole.SketchingHorizontal">
+            <summary>създава скица за отвор в Top Plane</summary>
+        </member>
+        <member name="M:SmartTools.Patterns.Hole.SetFileProperties">
+            <summary>съхранява характеристиките на отвора във File Properties</summary>
+        </member>
+        <member name="M:SmartTools.Patterns.Hole.CreateFolder">
+            <summary>създава папка с постоенията</summary>
+        </member>
+        <member name="M:SmartTools.Patterns.Hole.SetControls">
+            <summary>установява стойностите на размерите от въведените</summary>
+        </member>
+        <member name="M:SmartTools.Patterns.Hole.CutExtrusion">
+            <summary>създава отвора с отнемане на материал</summary>
+        </member>
+        <member name="T:SmartTools.Patterns.Plate">
+            <summary>
+            Създава модел ПЛАНКА
+            </summary>
+        </member>
+        <member name="P:SmartTools.Patterns.Plate.swDocumentType">
+            <summary>тип на модела</summary>
+        </member>
+        <member name="P:SmartTools.Patterns.Plate.modelType">
+            <summary>тип на модела определен от приложението</summary>
+        </member>
+        <member name="P:SmartTools.Patterns.Plate.nameSizeThickness">
+            <summary>наименование на размера за дебелина</summary>
+        </member>
+        <member name="P:SmartTools.Patterns.Plate.nameSizeWidth">
+            <summary>наименование на размера за ширина</summary>
+        </member>
+        <member name="P:SmartTools.Patterns.Plate.nameSizeLength">
+            <summary>наименование на размера за дължина</summary>
+        </member>
+        <member name="P:SmartTools.Patterns.Plate.nameSketch">
+            <summary>наименование на скицата</summary>
+        </member>
+        <member name="P:SmartTools.Patterns.Plate.nameExtrude">
+            <summary>наименование на 3D построението</summary>
+        </member>
+        <member name="M:SmartTools.Patterns.Plate.AddControlsOnPMPage">
+            <summary>добавя контролите в swPMPage</summary>
+        </member>
+        <member name="M:SmartTools.Patterns.Plate.Creating">
+            <summary>изграажда 3D модела</summary>
+            <returns>състояние TRUE модела е изграден, FALSE проблем с параметрите на модела</returns>
+        </member>
+        <member name="M:SmartTools.Patterns.Plate.SetFileProperties">
+            <summary>
+            съхранява характеристиките на модела във File Properties
+            </summary>
+        </member>
+        <member name="M:SmartTools.Patterns.Plate.CreateFolder">
+            <summary>
+            създава папка с построенията за модела
+            </summary>
+        </member>
+        <member name="M:SmartTools.Patterns.Plate.EditDocumentSW(System.Boolean)">
+            <summary>
+            подготвя характеристиките на модела за редактиране
+            </summary>
+        </member>
+        <member name="M:SmartTools.Patterns.Plate.MaterialName">
+            <summary>
+            връща наименованието на избрания материал
+            </summary>
+            <returns>избран материал</returns>
+        </member>
+        <member name="M:SmartTools.Patterns.Plate.SetControls">
+            <summary>установява стойностите на размерите от въведените</summary>
+        </member>
+        <member name="M:SmartTools.Patterns.Plate.Relevance">
+            <summary>
+            проверява приложимостта на модела към съществуващата среда на SW
+            </summary>
+            <returns>TRUE модела е приложим, FALSE не може да се приложи</returns>
+        </member>
+        <member name="F:SmartTools.SmartTools.iSldApp">
+            <summary>указателя на SW API върнат от SW</summary>
+        </member>
+        <member name="F:SmartTools.SmartTools.iCmdMgr">
+            <summary>Указател към Command Manager на SW</summary>
+        </member>
+        <member name="F:SmartTools.SmartTools.iCmdGroup">
+            <summary>
+            Указател към групата обекти на модели в CommandManager на SW
+            </summary>
+        </member>
+        <member name="F:SmartTools.SmartTools.iBitmap">
+            <summary>
+            Обект за обработка на иконите на приложението
+            </summary>
+        </member>
+        <member name="F:SmartTools.SmartTools.iPatterns">
+            <summary>
+            Списък с обекти на моделите използвани от приложението
+            </summary>
+        </member>
+        <member name="F:SmartTools.SmartTools.addinID">
+            <summary>Номер на приложението в средата на SW</summary>
+        </member>
+        <member name="P:SmartTools.SmartTools.SwApp">
+            <summary>указател към SW APP</summary>
+        </member>
+        <member name="M:SmartTools.SmartTools.#ctor">
+            <summary>Инстанцира приложението в средата на SW</summary>
+        </member>
+        <member name="M:SmartTools.SmartTools.ConnectToSW(System.Object,System.Int32)">
+            <summary> Осъществява връзката на приложението със SW</summary>
+            <param name="ThisSW">указател на SW API върнат от SW</param>
+            <param name="Cookie">номер на приложението в средата на SW</param>
+            <returns>TRUE ако приложението е осъществило връзката със SW</returns>
+        </member>
+        <member name="M:SmartTools.SmartTools.AddPatternsMgr">
+            <summary>
+            Добавя иконите на моделите в раздел/tab на CommandManager на SW
+            </summary>
+        </member>
+        <member name="M:SmartTools.SmartTools.CreateCommandGroup(System.Boolean@)">
+            <summary>
+            Създава групата за обектите на моделите на приложението
+            </summary>
+            <param name="getDataResult">изходящ флаг за налична информация в
+            регистрите за обекти на моделите</param>
+            <returns>TRUE окрита е разлика в броя на обектите</returns>
+        </member>
+        <member name="M:SmartTools.SmartTools.SetIcons">
+            <summary>
+            Подготвя файловте с икони използвани от приложението
+            </summary>
+        </member>
+        <member name="M:SmartTools.SmartTools.AddPatterns">
+            <summary>
+            Добавя в списък обектите на моделите използвани от приложението
+            </summary>
+        </member>
+        <member name="M:SmartTools.SmartTools.EnablePushButton(System.String)">
+            <param name="strID">Номер на инструмента</param>
+            <returns>int</returns>
+        </member>
+        <member name="M:SmartTools.SmartTools.PushButton(System.String)">
+            <summary>
+            Започва изпълнението на модел/инструмент
+            </summary>
+            <param name="strID">номер на модел/инструмент</param>
+        </member>
+        <member name="M:SmartTools.XML.XMLTubes.GetDiameters(System.String)">
+            <summary>
+            Връща допустимите диаметри за избрания стандарт
+            </summary>
+            <param name="standard">наименование на стандарта</param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartTools.XML.XMLTubes.GetThickness(System.String,System.String)">
+            <summary>
+            Връща допустимите дебелини за съответно избран стандарт и диаметър на тръба
+            </summary>
+            <param name="standard">наименование на стандарт</param>
+            <param name="diameter">стойност на диаметъра</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

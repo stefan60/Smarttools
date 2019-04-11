@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<materials>
+  <material>
+    <code>1.4307</code>
+  </material>
+  <material>
+    <code>1.4404</code>
+  </material>
+  <material>
+    <code>1.4301</code>
+  </material>
+  <material>
+    <code>1.4571</code>
+  </material>
+  <material>
+    <code>S235JR (АСт3)</code>
+  </material>
+  <material>
+    <code>Цветни метали</code>
+  </material>
+  <material>
+    <code>Боросиликати</code>
+  </material>
+  <material>
+    <code>Поликарбонат</code>
+  </material>
+  <material>
+    <code>Дървен материал</code>
+  </material>
+</materials>

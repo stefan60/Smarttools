@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CPTemplate>
+  <AppVersion>26</AppVersion>
+  <CPSheet>
+    <GroupBox Label="Описание" PropName="Groupbox2" DefaultState="Expanded">
+      <Control Label="Означение" PropName="Drawing Number" ApplyTo="Config" Type="TextBox" ReadOnly="False" DefaultValue="" Mode="Text" />
+      <Control Label="Наименование" PropName="Description" ApplyTo="Config" Type="TextBox" ReadOnly="False" DefaultValue="" Mode="Text" />
+      <Control Label="Забележка" PropName="Note" ApplyTo="Config" Type="ComboBox" ReadOnly="False" UserDefineable="True">
+        <Data Path="" SourceType="List">
+          <Item>-</Item>
+          <Item>БЧ</Item>
+          <Item>Вз.</Item>
+          <Item>Покупно</Item>
+          <Item>Дост. Клиент</Item>
+        </Data>
+      </Control>
+    </GroupBox>
+    <GroupBox Label="Наименование/Забележка Английски" PropName="Groupbox11" DefaultState="Collapsed">
+      <Control Label="Наименование Английски" PropName="DescriptionEN" ApplyTo="Config" Type="TextBox" ReadOnly="False" DefaultValue="" Mode="Text" />
+      <Control Label="Забележка Английски" PropName="NoteEN" ApplyTo="Config" Type="ComboBox" ReadOnly="False" UserDefineable="True">
+        <Data Path="" SourceType="List">
+          <Item>Assembly</Item>
+        </Data>
+      </Control>
+    </GroupBox>
+  </CPSheet>
+</CPTemplate>
